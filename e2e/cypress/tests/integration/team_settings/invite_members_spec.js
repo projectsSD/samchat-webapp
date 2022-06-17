@@ -149,7 +149,7 @@ function verifyInvitationResult(team, user, reason, isInvitationSent) {
 }
 
 function verifyInvitationSuccess(team, user) {
-    verifyInvitationResult(team, user, 'This member has been added to the team.', true);
+    verifyInvitationResult(team, user, 'This member has been added to the division.', true);
 }
 
 function verifyInvitationError(team, user) {

@@ -48,7 +48,7 @@ describe('Teams Suite', () => {
         });
     });
 
-    it('MM-T384 Team Admin can use Next button to page through list in Manage Members', () => {
+    it('MM-T384 Division Admin can use Next button to page through list in Manage Members', () => {
         // # Open team menu and click "Manage Members"
         cy.uiOpenTeamMenu('Manage Members');
 

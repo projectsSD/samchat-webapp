@@ -43,7 +43,7 @@ exports[`components/LeaveTeamModal should render the leave team model 1`] = `
       id="leaveTeamModalLabel"
     >
       <MemoizedFormattedMessage
-        defaultMessage="Leave the team?"
+        defaultMessage="Leave the division?"
         id="leave_team_modal.title"
       />
     </ModalTitle>
@@ -53,7 +53,7 @@ exports[`components/LeaveTeamModal should render the leave team model 1`] = `
     componentClass="div"
   >
     <injectIntl(FormattedMarkdownMessage)
-      defaultMessage="**You will be removed from {num_of_private_channels} private {num_of_private_channels,one {channel} other {channels}} on this team.** If the team is private you won't be able to rejoin it without an invitation from another team member. Are you sure?"
+      defaultMessage="**You will be removed from {num_of_private_channels} private {num_of_private_channels,one {channel} other {channels}} on this division.** If the team is private you won't be able to rejoin it without an invitation from another team member. Are you sure?"
       id="leave_team_modal_private.desc"
       values={
         Object {

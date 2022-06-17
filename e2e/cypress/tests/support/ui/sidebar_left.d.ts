@@ -36,7 +36,7 @@ declare namespace Cypress {
         /**
          * Open team menu
          *
-         * @param {string} item - ex. 'Invite People', 'Team Settings', etc.
+         * @param {string} item - ex. 'Invite People', 'Division Settings', etc.
          *
          * @example
          *   cy.uiOpenTeamMenu();

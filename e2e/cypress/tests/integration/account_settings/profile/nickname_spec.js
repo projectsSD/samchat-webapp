@@ -48,7 +48,7 @@ describe('Settings > Sidebar > General', () => {
             expect(getInnerText(el)).equal(`@${testUser.username} - ${testUser.first_name} ${testUser.last_name}`);
         });
 
-        // # Close Team Members modal
+        // # Close Division Members modal
         cy.uiClose();
     });
 

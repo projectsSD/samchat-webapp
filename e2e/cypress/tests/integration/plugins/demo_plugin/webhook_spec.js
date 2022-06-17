@@ -154,7 +154,7 @@ describe('Demo plugin - Webhook events', () => {
         });
     });
 
-    it('MM-T2408_6 - ​User joined the team Webhook event', () => {
+    it('MM-T2408_6 - ​User joined the division Webhook event', () => {
         // # Add user to the team
         cy.apiAdminLogin(admin);
         cy.apiAddUserToTeam(team2.id, testUser.id);

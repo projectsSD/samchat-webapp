@@ -95,7 +95,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -387,7 +387,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -741,7 +741,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -971,7 +971,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -1263,7 +1263,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -1498,7 +1498,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -1713,7 +1713,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -2005,7 +2005,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -2315,7 +2315,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -2545,7 +2545,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -2775,7 +2775,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -3017,7 +3017,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }
@@ -3247,7 +3247,7 @@ exports[`components/user_settings/display/UserSettingsDisplay should match snaps
         section="name_format"
         title={
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="Teammate Name Display"
+            defaultMessage="Divisionmate Name Display"
             id="user.settings.display.teammateNameDisplayTitle"
           />
         }

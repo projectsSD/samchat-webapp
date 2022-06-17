@@ -47,7 +47,7 @@ export default class GroupRow extends React.PureComponent<GroupRowProps> {
         const teamAdmin = (
             <FormattedMessage
                 id='admin.team_channel_settings.group_row.teamAdmin'
-                defaultMessage='Team Admin'
+                defaultMessage='Division Admin'
             />
         );
         const member = (
@@ -70,7 +70,7 @@ export default class GroupRow extends React.PureComponent<GroupRowProps> {
         if (!group.scheme_admin && type === 'channel') {
             return localizeMessage('admin.team_channel_settings.group_row.channelAdmin', 'Channel Admin');
         } else if (!group.scheme_admin && type === 'team') {
-            return localizeMessage('admin.team_channel_settings.group_row.teamAdmin', 'Team Admin');
+            return localizeMessage('admin.team_channel_settings.group_row.teamAdmin', 'Division Admin');
         }
         return localizeMessage('admin.team_channel_settings.group_row.member', 'Member');
     }

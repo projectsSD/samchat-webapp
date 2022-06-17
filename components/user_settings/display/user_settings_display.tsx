@@ -646,7 +646,7 @@ export default class UserSettingsDisplay extends React.PureComponent<Props, Stat
             defaultDisplay: this.props.configTeammateNameDisplay,
             title: {
                 id: t('user.settings.display.teammateNameDisplayTitle'),
-                message: 'Teammate Name Display',
+                message: 'Divisionmate Name Display',
             },
             firstOption: {
                 value: Constants.TEAMMATE_NAME_DISPLAY.SHOW_USERNAME,

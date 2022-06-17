@@ -69,7 +69,7 @@ exports[`components/admin_console/team_channel_settings/group/UsersToRemove shou
               },
               "team_admin": Object {
                 "name": <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Admin"
+                  defaultMessage="Division Admin"
                   id="admin.user_grid.team_admin"
                 />,
                 "value": false,
@@ -175,7 +175,7 @@ exports[`components/admin_console/team_channel_settings/group/UsersToRemove shou
               },
               "team_admin": Object {
                 "name": <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Admin"
+                  defaultMessage="Division Admin"
                   id="admin.user_grid.team_admin"
                 />,
                 "value": false,
@@ -281,7 +281,7 @@ exports[`components/admin_console/team_channel_settings/group/UsersToRemove shou
               },
               "team_admin": Object {
                 "name": <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Admin"
+                  defaultMessage="Division Admin"
                   id="admin.user_grid.team_admin"
                 />,
                 "value": false,
@@ -379,7 +379,7 @@ exports[`components/admin_console/team_channel_settings/group/UsersToRemove shou
               },
               "team_admin": Object {
                 "name": <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Admin"
+                  defaultMessage="Division Admin"
                   id="admin.user_grid.team_admin"
                 />,
                 "value": false,

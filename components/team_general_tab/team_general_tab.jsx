@@ -132,7 +132,7 @@ export default class GeneralTab extends React.PureComponent {
             state.clientError = (
                 <FormattedMessage
                     id='general_tab.teamNameRestrictions'
-                    defaultMessage='Team Name must be {min} or more characters up to a maximum of {max}. You can add a longer team description.'
+                    defaultMessage='Division Name must be {min} or more characters up to a maximum of {max}. You can add a longer team description.'
                     values={{
                         min: Constants.MIN_TEAMNAME_LENGTH,
                         max: Constants.MAX_TEAMNAME_LENGTH,
@@ -371,7 +371,7 @@ export default class GeneralTab extends React.PureComponent {
                     <div className='setting-list__hint'>
                         <FormattedMessage
                             id='general_tab.codeLongDesc'
-                            defaultMessage='The Invite Code is part of the unique team invitation link which is sent to members you’re inviting to this team. Regenerating the code creates a new invitation link and invalidates the previous link.'
+                            defaultMessage='The Invite Code is part of the unique division invitation link which is sent to members you’re inviting to this division. Regenerating the code creates a new invitation link and invalidates the previous link.'
                             values={{
                                 getTeamInviteLink: (
                                     <strong>
@@ -417,7 +417,7 @@ export default class GeneralTab extends React.PureComponent {
             let teamNameLabel = (
                 <FormattedMessage
                     id='general_tab.teamName'
-                    defaultMessage='Team Name'
+                    defaultMessage='Division Name'
                 />
             );
             if (Utils.isMobile()) {
@@ -445,11 +445,11 @@ export default class GeneralTab extends React.PureComponent {
                 </div>,
             );
 
-            const nameExtraInfo = <span>{Utils.localizeMessage('general_tab.teamNameInfo', 'Set the name of the team as it appears on your sign-in screen and at the top of the left-hand sidebar.')}</span>;
+            const nameExtraInfo = <span>{Utils.localizeMessage('general_tab.teamNameInfo', 'Set the name of the division as it appears on your sign-in screen and at the top of the left-hand sidebar.')}</span>;
 
             nameSection = (
                 <SettingItemMax
-                    title={Utils.localizeMessage('general_tab.teamName', 'Team Name')}
+                    title={Utils.localizeMessage('general_tab.teamName', 'Division Name')}
                     inputs={inputs}
                     submit={this.handleNameSubmit}
                     serverError={serverError}
@@ -463,7 +463,7 @@ export default class GeneralTab extends React.PureComponent {
 
             nameSection = (
                 <SettingItemMin
-                    title={Utils.localizeMessage('general_tab.teamName', 'Team Name')}
+                    title={Utils.localizeMessage('general_tab.teamName', 'Division Name')}
                     describe={describe}
                     updateSection={this.handleUpdateSection}
                     section={'name'}
@@ -479,7 +479,7 @@ export default class GeneralTab extends React.PureComponent {
             let teamDescriptionLabel = (
                 <FormattedMessage
                     id='general_tab.teamDescription'
-                    defaultMessage='Team Description'
+                    defaultMessage='Division Description'
                 />
             );
             if (Utils.isMobile()) {
@@ -507,11 +507,11 @@ export default class GeneralTab extends React.PureComponent {
                 </div>,
             );
 
-            const descriptionExtraInfo = <span>{Utils.localizeMessage('general_tab.teamDescriptionInfo', 'Team description provides additional information to help users select the right team. Maximum of 50 characters.')}</span>;
+            const descriptionExtraInfo = <span>{Utils.localizeMessage('general_tab.teamDescriptionInfo', 'Division description provides additional information to help users select the right division. Maximum of 50 characters.')}</span>;
 
             descriptionSection = (
                 <SettingItemMax
-                    title={Utils.localizeMessage('general_tab.teamDescription', 'Team Description')}
+                    title={Utils.localizeMessage('general_tab.teamDescription', 'Division Description')}
                     inputs={inputs}
                     submit={this.handleDescriptionSubmit}
                     serverError={serverError}
@@ -528,13 +528,13 @@ export default class GeneralTab extends React.PureComponent {
                 describemsg = (
                     <FormattedMessage
                         id='general_tab.emptyDescription'
-                        defaultMessage="Click 'Edit' to add a team description."
+                        defaultMessage="Click 'Edit' to add a division description."
                     />
                 );
             }
             descriptionSection = (
                 <SettingItemMin
-                    title={Utils.localizeMessage('general_tab.teamDescription', 'Team Description')}
+                    title={Utils.localizeMessage('general_tab.teamDescription', 'Division Description')}
                     describe={describemsg}
                     updateSection={this.handleUpdateSection}
                     section={'description'}
@@ -547,13 +547,13 @@ export default class GeneralTab extends React.PureComponent {
             const helpText = (
                 <FormattedMarkdownMessage
                     id={'setting_picture.help.team'}
-                    defaultMessage='Upload a team icon in BMP, JPG or PNG format.\nSquare images with a solid background color are recommended.'
+                    defaultMessage='Upload a division icon in BMP, JPG or PNG format.\nSquare images with a solid background color are recommended.'
                 />
             );
             teamIconSection = (
                 <SettingPicture
                     imageContext='team'
-                    title={Utils.localizeMessage('general_tab.teamIcon', 'Team Icon')}
+                    title={Utils.localizeMessage('general_tab.teamIcon', 'Division Icon')}
                     src={Utils.imageURLForTeam(team)}
                     file={this.state.teamIconFile}
                     serverError={this.state.serverError}
@@ -596,7 +596,7 @@ export default class GeneralTab extends React.PureComponent {
 
             teamIconSection = (
                 <SettingItemMin
-                    title={Utils.localizeMessage('general_tab.teamIcon', 'Team Icon')}
+                    title={Utils.localizeMessage('general_tab.teamIcon', 'Division Icon')}
                     describe={minMessage}
                     section={'team_icon'}
                     updateSection={this.handleUpdateSection}
@@ -630,11 +630,11 @@ export default class GeneralTab extends React.PureComponent {
                 </div>,
             );
 
-            const allowedDomainsInfo = <span>{Utils.localizeMessage('general_tab.AllowedDomainsInfo', 'Users can only join the team if their email matches a specific domain (e.g. "mattermost.com") or list of comma-separated domains (e.g. "corp.mattermost.com, mattermost.com").')}</span>;
+            const allowedDomainsInfo = <span>{Utils.localizeMessage('general_tab.AllowedDomainsInfo', 'Users can only join the division if their email matches a specific domain (e.g. "mattermost.com") or list of comma-separated domains (e.g. "corp.mattermost.com, mattermost.com").')}</span>;
 
             allowedDomainsSection = (
                 <SettingItemMax
-                    title={Utils.localizeMessage('general_tab.allowedDomains', 'Allow only users with a specific email domain to join this team')}
+                    title={Utils.localizeMessage('general_tab.allowedDomains', 'Allow only users with a specific email domain to join this division')}
                     inputs={inputs}
                     submit={this.handleAllowedDomainsSubmit}
                     serverError={serverError}

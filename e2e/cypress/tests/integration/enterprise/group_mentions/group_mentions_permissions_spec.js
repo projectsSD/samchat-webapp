@@ -178,14 +178,14 @@ describe('Group Mentions', () => {
         });
     });
 
-    it('MM-T2451 - Group Mentions when user is a Team Admin', () => {
+    it('MM-T2451 - Group Mentions when user is a Division Admin', () => {
         const groupName = `board_test_case_${Date.now()}`;
 
         // # Login as sysadmin and enable group mention with the group name
         cy.apiAdminLogin();
         enableGroupMention(groupName, groupID, boardUser.email);
 
-        // # Disable Group Mentions for All Users & Channel Admins & Team Admins
+        // # Disable Group Mentions for All Users & Channel Admins & Division Admins
         cy.visit('/admin_console/user_management/permissions/system_scheme');
         cy.get('.admin-console__header', {timeout: TIMEOUTS.ONE_MIN}).should('be.visible').and('have.text', 'System Scheme');
         disablePermission('all_users-posts-use_group_mentions-checkbox');
@@ -222,7 +222,7 @@ describe('Group Mentions', () => {
                     cy.get(`#postMessageText_${postId}`).find('.group-mention-link').should('not.exist');
                 });
 
-                // # Enable Group Mentions for Team Admins
+                // # Enable Group Mentions for Division Admins
                 cy.apiAdminLogin();
                 cy.visit('/admin_console/user_management/permissions/system_scheme');
                 cy.get('.admin-console__header', {timeout: TIMEOUTS.ONE_MIN}).should('be.visible').and('have.text', 'System Scheme');
@@ -247,7 +247,7 @@ describe('Group Mentions', () => {
 
                 // * Verify if a system message is displayed
                 cy.getLastPostId().then((postId) => {
-                    cy.get(`#postMessageText_${postId}`).should('include.text', `@${groupName} has no members on this team`);
+                    cy.get(`#postMessageText_${postId}`).should('include.text', `@${groupName} has no members on this division`);
 
                     // * Verify that the group mention is not highlighted
                     cy.get(`#postMessageText_${postId}`).find('.mention--highlight').should('not.exist');

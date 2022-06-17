@@ -22,8 +22,8 @@ describe('Teams Suite', () => {
     });
 
     it('MM-T383 Create a new team', () => {
-        // # Open team menu and click "Create a Team"
-        cy.uiOpenTeamMenu('Create a Team');
+        // # Open team menu and click "Create a Division"
+        cy.uiOpenTeamMenu('Create a Division');
 
         // # Input team name as Team Test
         const teamName = 'Team Test';
@@ -68,8 +68,8 @@ describe('Teams Suite', () => {
 });
 
 function tryReservedTeamURLAndVerifyError(teamURL) {
-    // # Open team menu and click "Create a Team"
-    cy.uiOpenTeamMenu('Create a Team');
+    // # Open team menu and click "Create a Division"
+    cy.uiOpenTeamMenu('Create a Division');
 
     // # Input passed in team name
     cy.get('#teamNameInput').should('be.visible').type(teamURL);

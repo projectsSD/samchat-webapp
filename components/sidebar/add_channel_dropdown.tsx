@@ -56,7 +56,7 @@ const AddChannelDropdown = ({
                     onClick={invitePeopleModal}
                     icon={<i className='icon-account-plus-outline'/>}
                     text={intl.formatMessage({id: 'sidebar_left.add_channel_dropdown.invitePeople', defaultMessage: 'Invite People'})}
-                    extraText={intl.formatMessage({id: 'sidebar_left.add_channel_dropdown.invitePeopleExtraText', defaultMessage: 'Add people to the team'})}
+                    extraText={intl.formatMessage({id: 'sidebar_left.add_channel_dropdown.invitePeopleExtraText', defaultMessage: 'Add people to the division'})}
                 />
                 {showInviteTutorialTip && <InvitePeopleTour/>}
             </Menu.Group>

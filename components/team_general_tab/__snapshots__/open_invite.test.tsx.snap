@@ -20,7 +20,7 @@ exports[`components/TeamSettings/OpenInvite should match snapshot on active with
   section=""
   serverError=""
   submit={[Function]}
-  title="Allow any user with an account on this server to join this team"
+  title="Allow any user with an account on this server to join this division"
   updateSection={[Function]}
 />
 `;
@@ -80,7 +80,7 @@ exports[`components/TeamSettings/OpenInvite should match snapshot on active with
           className="mt-5"
         >
           <Memo(MemoizedFormattedMessage)
-            defaultMessage="When allowed, a link to this team will be included on the landing page allowing anyone with an account to join this team. Changing from \\"Yes\\" to \\"No\\" will regenerate the  invitation code, create a new invitation link and invalidate the previous link."
+            defaultMessage="When allowed, a link to this division will be included on the landing page allowing anyone with an account to join this division. Changing from \\"Yes\\" to \\"No\\" will regenerate the  invitation code, create a new invitation link and invalidate the previous link."
             id="general_tab.openInviteDesc"
           />
         </div>
@@ -91,7 +91,7 @@ exports[`components/TeamSettings/OpenInvite should match snapshot on active with
   section=""
   serverError=""
   submit={[Function]}
-  title="Allow any user with an account on this server to join this team"
+  title="Allow any user with an account on this server to join this division"
   updateSection={[Function]}
 />
 `;
@@ -100,7 +100,7 @@ exports[`components/TeamSettings/OpenInvite should match snapshot on non active 
 <Connect(SettingItemMin)
   describe="Yes"
   section="open_invite"
-  title="Allow any user with an account on this server to join this team"
+  title="Allow any user with an account on this server to join this division"
   updateSection={[Function]}
 />
 `;
@@ -109,7 +109,7 @@ exports[`components/TeamSettings/OpenInvite should match snapshot on non active 
 <Connect(SettingItemMin)
   describe="No, members of this team are added and removed by linked groups."
   section="open_invite"
-  title="Allow any user with an account on this server to join this team"
+  title="Allow any user with an account on this server to join this division"
   updateSection={[Function]}
 />
 `;
@@ -118,7 +118,7 @@ exports[`components/TeamSettings/OpenInvite should match snapshot on non active 
 <Connect(SettingItemMin)
   describe="No"
   section="open_invite"
-  title="Allow any user with an account on this server to join this team"
+  title="Allow any user with an account on this server to join this division"
   updateSection={[Function]}
 />
 `;

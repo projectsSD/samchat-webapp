@@ -132,7 +132,7 @@ describe('Leave an archived channel', () => {
                 // # Select CTRL/⌘+k) to open the channel switcher
                 cy.typeCmdOrCtrl().type('K', {release: true});
 
-                // # Start typing the name of a public channel on this team that has been archived which the test user belongs to
+                // # Start typing the name of a public channel on this division that has been archived which the test user belongs to
                 cy.findByRole('textbox', {name: 'quick switch input'}).type(commonName);
 
                 // * Suggestion list should be visible and have three elements (the two channels and the divider)
@@ -155,7 +155,7 @@ describe('Leave an archived channel', () => {
                 // # Select CTRL/⌘+k) to open the channel switcher
                 cy.typeCmdOrCtrl().type('K', {release: true});
 
-                // # Start typing the name of a private channel on this team that has been archived which the test user belongs to
+                // # Start typing the name of a private channel on this division that has been archived which the test user belongs to
                 cy.findByRole('textbox', {name: 'quick switch input'}).type(commonName);
 
                 // * Suggestion list should be visible and have three elements (the two channels and the divider)

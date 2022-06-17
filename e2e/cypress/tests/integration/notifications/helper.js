@@ -19,7 +19,7 @@ export function changeTeammateNameDisplayAs(category) {
     // # Open settings modal
     cy.uiOpenSettingsModal('Display').within(() => {
         // # Click "Desktop"
-        cy.findByText('Teammate Name Display').click();
+        cy.findByText('Divisionmate Name Display').click();
 
         // # Select category.
         cy.get(category).check();

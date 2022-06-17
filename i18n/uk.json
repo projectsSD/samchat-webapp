@@ -1289,7 +1289,7 @@
   "admin.team_settings.team_detail.group_configuration": "Team Configuration",
   "admin.team_settings.team_detail.membersTitle": "Учасники ",
   "admin.team_settings.team_detail.teamDescription": "Опис команди",
-  "admin.team_settings.team_detail.teamName": "**Team Name**:",
+  "admin.team_settings.team_detail.teamName": "**Division Name**:",
   "admin.team_settings.team_details.add_members": "Додати учасників",
   "admin.team_settings.team_list.mappingHeader": "Менеджмент",
   "admin.team_settings.team_list.nameHeader": "Ім'я",

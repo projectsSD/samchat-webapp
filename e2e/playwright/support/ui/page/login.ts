@@ -29,7 +29,7 @@ export class LoginPage {
             : 'Email or Username';
         const description =
             adminConfig.TeamSettings.CustomDescriptionText ||
-            'All team communication in one place, searchable and accessible anywhere';
+            'All division communication in one place, searchable and accessible anywhere';
 
         this.siteNameHeader = page.locator(`h1:has-text("${adminConfig.TeamSettings.SiteName}")`);
         this.siteDescription = page.locator(`text=${description}`);

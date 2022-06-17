@@ -37,10 +37,10 @@ describe('Environment', () => {
         // # Navigate to a channel
         cy.visit(townsquareLink);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
             // clicking on edit button
             cy.get('#team_iconEdit').should('be.visible').click();
@@ -89,10 +89,10 @@ describe('Environment', () => {
         // # Navigate to a channel
         cy.visit(townsquareLink);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
             // clicking on edit button
             cy.get('#team_iconEdit').should('be.visible').click();
@@ -141,10 +141,10 @@ describe('Environment', () => {
         // # Navigate to a channel
         cy.visit(townsquareLink);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
             // clicking on edit button
             cy.get('#team_iconEdit').should('be.visible').click();

@@ -1487,7 +1487,7 @@
   "admin.permissions.systemScheme.resetDefaultsConfirmationButton": "بله، تنظیم مجدد",
   "admin.permissions.systemScheme.systemAdminsDescription": "مجوزهای کامل به مدیران سیستم داده شده است.",
   "admin.permissions.systemScheme.systemAdminsTitle": "مدیران سیستم",
-  "admin.permissions.systemScheme.teamAdminsDescription": "مجوزهایی که به سازندگان تیم و هر کاربر ارتقا یافته به Team Administrator داده شده است.",
+  "admin.permissions.systemScheme.teamAdminsDescription": "مجوزهایی که به سازندگان تیم و هر کاربر ارتقا یافته به Division Administrator داده شده است.",
   "admin.permissions.systemScheme.teamAdminsTitle": "مدیران تیم",
   "admin.permissions.systemSchemeBannerButton": "ویرایش طرح",
   "admin.permissions.systemSchemeBannerText": "مجوزهای پیش‌فرض به ارث رسیده توسط همه تیم‌ها را تنظیم کنید، مگر اینکه [Team Override Scheme] (!https://docs.mattermost.com/onboard/advanced-permissions.html) اعمال شود.",

@@ -19,7 +19,7 @@ import {
     verifyEmailBody,
 } from '../../utils';
 
-describe('Team Settings', () => {
+describe('Division Settings', () => {
     const sysadmin = getAdminAccount();
     const randomId = getRandomId();
     const username = `user${randomId}`;
@@ -54,14 +54,14 @@ describe('Team Settings', () => {
     });
 
     it('MM-T385 Invite new user to closed team using email invite', () => {
-        // # Open 'Team Settings' modal
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open 'Division Settings' modal
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
             cy.get('#open_inviteDesc').should('have.text', 'No');
 
-            // # Click on the 'Allow only users with a specific email domain to join this team' edit button
+            // # Click on the 'Allow only users with a specific email domain to join this division' edit button
             cy.get('#allowed_domainsEdit').should('be.visible').click();
 
             // * Verify that the '#allowedDomains' input field is empty

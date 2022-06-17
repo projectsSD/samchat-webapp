@@ -150,7 +150,7 @@ describe('Group Mentions', () => {
                     // * Verify if a system message is displayed indicating that there are no members in this team
                     cy.getLastPostId().then((postId) => {
                         cy.get(`#postMessageText_${postId}`).
-                            should('include.text', `@${groupName} has no members on this team`);
+                            should('include.text', `@${groupName} has no members on this division`);
 
                         // * Verify that the group mention is not highlighted
                         cy.get(`#postMessageText_${postId}`).find('.mention--highlight').should('not.exist');

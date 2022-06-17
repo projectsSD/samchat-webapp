@@ -64,7 +64,7 @@ describe('Verify Guest User Identification in different screens', () => {
         });
     });
 
-    it('Verify Guest Badge in Team Members dialog', () => {
+    it('Verify Guest Badge in Division Members dialog', () => {
         // # Open team menu and click 'View Members'
         cy.uiOpenTeamMenu('View Members');
 

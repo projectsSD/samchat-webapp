@@ -93,7 +93,7 @@ export default function HelpComposing(): JSX.Element {
             <p>
                 <FormattedMarkdownMessage
                     id='help.composing.deleting.description'
-                    defaultMessage={'Delete a message by selecting the **More Actions [...]** icon next to any message text that you\'ve composed, then select **Delete**. System and Team Admins can delete any message on their system or team.'}
+                    defaultMessage={'Delete a message by selecting the **More Actions [...]** icon next to any message text that you\'ve composed, then select **Delete**. System and Division Admins can delete any message on their system or team.'}
                 />
             </p>
             <h2 className='markdown__heading'>

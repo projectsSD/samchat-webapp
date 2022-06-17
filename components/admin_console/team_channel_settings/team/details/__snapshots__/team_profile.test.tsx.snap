@@ -280,11 +280,11 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud restore sho
                   className="row row-bottom-padding"
                 >
                   <injectIntl(FormattedMarkdownMessage)
-                    defaultMessage="**Team Name**:"
+                    defaultMessage="**Division Name**:"
                     id="admin.team_settings.team_detail.teamName"
                   >
                     <FormattedMarkdownMessage
-                      defaultMessage="**Team Name**:"
+                      defaultMessage="**Division Name**:"
                       disableLinks={false}
                       id="admin.team_settings.team_detail.teamName"
                       intl={
@@ -327,7 +327,7 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud restore sho
                       <span
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "<strong>Team Name</strong>:",
+                            "__html": "<strong>Division Name</strong>:",
                           }
                         }
                       />
@@ -340,11 +340,11 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud restore sho
                   className="row"
                 >
                   <injectIntl(FormattedMarkdownMessage)
-                    defaultMessage="**Team Description**:"
+                    defaultMessage="**Division Description**:"
                     id="admin.team_settings.team_detail.teamDescription"
                   >
                     <FormattedMarkdownMessage
-                      defaultMessage="**Team Description**:"
+                      defaultMessage="**Division Description**:"
                       disableLinks={false}
                       id="admin.team_settings.team_detail.teamDescription"
                       intl={
@@ -387,7 +387,7 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud restore sho
                       <span
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "<strong>Team Description</strong>:",
+                            "__html": "<strong>Division Description</strong>:",
                           }
                         }
                       />
@@ -640,11 +640,11 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                   className="row row-bottom-padding"
                 >
                   <injectIntl(FormattedMarkdownMessage)
-                    defaultMessage="**Team Name**:"
+                    defaultMessage="**Division Name**:"
                     id="admin.team_settings.team_detail.teamName"
                   >
                     <FormattedMarkdownMessage
-                      defaultMessage="**Team Name**:"
+                      defaultMessage="**Division Name**:"
                       disableLinks={false}
                       id="admin.team_settings.team_detail.teamName"
                       intl={
@@ -687,7 +687,7 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                       <span
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "<strong>Team Name</strong>:",
+                            "__html": "<strong>Division Name</strong>:",
                           }
                         }
                       />
@@ -700,11 +700,11 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                   className="row"
                 >
                   <injectIntl(FormattedMarkdownMessage)
-                    defaultMessage="**Team Description**:"
+                    defaultMessage="**Division Description**:"
                     id="admin.team_settings.team_detail.teamDescription"
                   >
                     <FormattedMarkdownMessage
-                      defaultMessage="**Team Description**:"
+                      defaultMessage="**Division Description**:"
                       disableLinks={false}
                       id="admin.team_settings.team_detail.teamDescription"
                       intl={
@@ -747,7 +747,7 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                       <span
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "<strong>Team Description</strong>:",
+                            "__html": "<strong>Division Description</strong>:",
                           }
                         }
                       />
@@ -1133,11 +1133,11 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                   className="row row-bottom-padding"
                 >
                   <injectIntl(FormattedMarkdownMessage)
-                    defaultMessage="**Team Name**:"
+                    defaultMessage="**Division Name**:"
                     id="admin.team_settings.team_detail.teamName"
                   >
                     <FormattedMarkdownMessage
-                      defaultMessage="**Team Name**:"
+                      defaultMessage="**Division Name**:"
                       disableLinks={false}
                       id="admin.team_settings.team_detail.teamName"
                       intl={
@@ -1180,7 +1180,7 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                       <span
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "<strong>Team Name</strong>:",
+                            "__html": "<strong>Division Name</strong>:",
                           }
                         }
                       />
@@ -1193,11 +1193,11 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                   className="row"
                 >
                   <injectIntl(FormattedMarkdownMessage)
-                    defaultMessage="**Team Description**:"
+                    defaultMessage="**Division Description**:"
                     id="admin.team_settings.team_detail.teamDescription"
                   >
                     <FormattedMarkdownMessage
-                      defaultMessage="**Team Description**:"
+                      defaultMessage="**Division Description**:"
                       disableLinks={false}
                       id="admin.team_settings.team_detail.teamDescription"
                       intl={
@@ -1240,7 +1240,7 @@ exports[`admin_console/team_channel_settings/team/TeamProfile__Cloud should matc
                       <span
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "<strong>Team Description</strong>:",
+                            "__html": "<strong>Division Description</strong>:",
                           }
                         }
                       />

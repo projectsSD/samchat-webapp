@@ -42,7 +42,7 @@ exports[`components/team_settings_modal should match snapshot 1`] = `
       componentClass="h1"
     >
       <MemoizedFormattedMessage
-        defaultMessage="Team Settings"
+        defaultMessage="Division Settings"
         id="team_settings_modal.title"
       />
     </ModalTitle>

@@ -505,7 +505,7 @@ exports[`components/AdminSidebar should match snapshot 1`] = `
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Statistics"
+                  defaultMessage="Division Statistics"
                   id="admin.sidebar.teamStatistics"
                 />
               }
@@ -561,7 +561,7 @@ exports[`components/AdminSidebar should match snapshot 1`] = `
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Teams"
+                  defaultMessage="Divisions"
                   id="admin.sidebar.teams"
                 />
               }
@@ -793,7 +793,7 @@ exports[`components/AdminSidebar should match snapshot 1`] = `
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Users and Teams"
+                  defaultMessage="Users and Divisions"
                   id="admin.sidebar.usersAndTeams"
                 />
               }
@@ -1250,7 +1250,7 @@ exports[`components/AdminSidebar should match snapshot with workspace optimizati
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Statistics"
+                  defaultMessage="Division Statistics"
                   id="admin.sidebar.teamStatistics"
                 />
               }
@@ -1306,7 +1306,7 @@ exports[`components/AdminSidebar should match snapshot with workspace optimizati
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Teams"
+                  defaultMessage="Divisions"
                   id="admin.sidebar.teams"
                 />
               }
@@ -1538,7 +1538,7 @@ exports[`components/AdminSidebar should match snapshot with workspace optimizati
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Users and Teams"
+                  defaultMessage="Users and Divisions"
                   id="admin.sidebar.usersAndTeams"
                 />
               }
@@ -2050,7 +2050,7 @@ exports[`components/AdminSidebar should match snapshot, not prevent the console 
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Statistics"
+                  defaultMessage="Division Statistics"
                   id="admin.sidebar.teamStatistics"
                 />
               }
@@ -2106,7 +2106,7 @@ exports[`components/AdminSidebar should match snapshot, not prevent the console 
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Teams"
+                  defaultMessage="Divisions"
                   id="admin.sidebar.teams"
                 />
               }
@@ -2338,7 +2338,7 @@ exports[`components/AdminSidebar should match snapshot, not prevent the console 
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Users and Teams"
+                  defaultMessage="Users and Divisions"
                   id="admin.sidebar.usersAndTeams"
                 />
               }
@@ -2795,7 +2795,7 @@ exports[`components/AdminSidebar should match snapshot, render plugins without a
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Statistics"
+                  defaultMessage="Division Statistics"
                   id="admin.sidebar.teamStatistics"
                 />
               }
@@ -2851,7 +2851,7 @@ exports[`components/AdminSidebar should match snapshot, render plugins without a
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Teams"
+                  defaultMessage="Divisions"
                   id="admin.sidebar.teams"
                 />
               }
@@ -3083,7 +3083,7 @@ exports[`components/AdminSidebar should match snapshot, render plugins without a
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Users and Teams"
+                  defaultMessage="Users and Divisions"
                   id="admin.sidebar.usersAndTeams"
                 />
               }
@@ -3540,7 +3540,7 @@ exports[`components/AdminSidebar should match snapshot, with license (with all f
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Statistics"
+                  defaultMessage="Division Statistics"
                   id="admin.sidebar.teamStatistics"
                 />
               }
@@ -3608,7 +3608,7 @@ exports[`components/AdminSidebar should match snapshot, with license (with all f
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Teams"
+                  defaultMessage="Divisions"
                   id="admin.sidebar.teams"
                 />
               }
@@ -3876,7 +3876,7 @@ exports[`components/AdminSidebar should match snapshot, with license (with all f
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Users and Teams"
+                  defaultMessage="Users and Divisions"
                   id="admin.sidebar.usersAndTeams"
                 />
               }
@@ -4466,7 +4466,7 @@ exports[`components/AdminSidebar should match snapshot, with license (without an
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Team Statistics"
+                  defaultMessage="Division Statistics"
                   id="admin.sidebar.teamStatistics"
                 />
               }
@@ -4534,7 +4534,7 @@ exports[`components/AdminSidebar should match snapshot, with license (without an
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Teams"
+                  defaultMessage="Divisions"
                   id="admin.sidebar.teams"
                 />
               }
@@ -4778,7 +4778,7 @@ exports[`components/AdminSidebar should match snapshot, with license (without an
               tag=""
               title={
                 <Memo(MemoizedFormattedMessage)
-                  defaultMessage="Users and Teams"
+                  defaultMessage="Users and Divisions"
                   id="admin.sidebar.usersAndTeams"
                 />
               }

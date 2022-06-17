@@ -43,8 +43,8 @@ describe('Verify Accessibility Support in Modals & Dialogs', () => {
         // * Verify the accessibility support in Profile Dialog
         verifyUserMenuModal('Profile');
 
-        // * Verify the accessibility support in Team Settings Dialog
-        verifyMainMenuModal('Team Settings');
+        // * Verify the accessibility support in Division Settings Dialog
+        verifyMainMenuModal('Division Settings');
 
         // * Verify the accessibility support in Manage Members Dialog
         verifyMainMenuModal('Manage Members', `${testTeam.display_name} Members`);

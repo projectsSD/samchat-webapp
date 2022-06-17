@@ -44,7 +44,7 @@ export function sendMembersInvites(teamId: string, users: UserProfile[], emails:
                 if (memberWithError) {
                     notSent.push({user: userToAdd, reason: memberWithError.error.message});
                 } else {
-                    sent.push({user: userToAdd, reason: localizeMessage('invite.members.added-to-team', 'This member has been added to the team.')});
+                    sent.push({user: userToAdd, reason: localizeMessage('invite.members.added-to-team', 'This member has been added to the division.')});
                 }
             }
         }
@@ -124,7 +124,7 @@ export async function sendGuestInviteForUser(
     if (memberOfAny) {
         return {notSent: {user, reason: localizeMessage('invite.guests.already-some-channels-member', 'This person is already a member of some of the channels.')}};
     }
-    return {sent: {user, reason: {id: t('invite.guests.new-member'), message: 'This guest has been added to the team and {count, plural, one {channel} other {channels}}.', values: {count: channels.length}}}};
+    return {sent: {user, reason: {id: t('invite.guests.new-member'), message: 'This guest has been added to the division and {count, plural, one {channel} other {channels}}.', values: {count: channels.length}}}};
 }
 
 export function sendGuestsInvites(
@@ -214,7 +214,7 @@ export function sendMembersInvitesToChannels(
                 if (memberWithError) {
                     notSent.push({user: userToAdd, reason: memberWithError.error.message});
                 } else {
-                    sent.push({user: userToAdd, reason: localizeMessage('invite.members.added-to-team', 'This member has been added to the team.')});
+                    sent.push({user: userToAdd, reason: localizeMessage('invite.members.added-to-team', 'This member has been added to the division.')});
                 }
             }
         }

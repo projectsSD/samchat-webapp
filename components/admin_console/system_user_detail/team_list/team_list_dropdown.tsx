@@ -62,18 +62,18 @@ export default class TeamListDropdown extends React.PureComponent<Props, State> 
                             id='makeTeamAdmin'
                             show={showMakeTeamAdmin}
                             onClick={() => this.props.doMakeUserTeamAdmin(team.id)}
-                            text={localizeMessage('team_members_dropdown.makeAdmin', 'Make Team Admin')}
+                            text={localizeMessage('team_members_dropdown.makeAdmin', 'Make Division Admin')}
                         />
                         <Menu.ItemAction
                             show={showMakeTeamMember}
                             onClick={() => this.props.doMakeUserTeamMember(team.id)}
-                            text={localizeMessage('team_members_dropdown.makeMember', 'Make Team Member')}
+                            text={localizeMessage('team_members_dropdown.makeMember', 'Make Division Member')}
                         />
                         <Menu.ItemAction
                             id='removeFromTeam'
                             show={true}
                             onClick={() => this.props.doRemoveUserFromTeam(team.id)}
-                            text={localizeMessage('team_members_dropdown.leave_team', 'Remove from Team')}
+                            text={localizeMessage('team_members_dropdown.leave_team', 'Remove from Division')}
                             buttonClass='SystemUserDetail__action-remove-team'
                         />
                     </Menu>

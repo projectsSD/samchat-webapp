@@ -26,7 +26,7 @@ describe('Join an open team from a direct message link', () => {
         cy.apiCreateTeam('mmt452-open-team', 'mmt452-open-team', 'O', true).then(({team}) => {
             openTeam = team;
 
-            // # Allow any user with an account on this server to join this team
+            // # Allow any user with an account on this server to join this division
             cy.apiPatchTeam(openTeam.id, {
                 allow_open_invite: true,
             });

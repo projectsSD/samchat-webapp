@@ -162,7 +162,7 @@ export default class TeamMembersDropdown extends React.PureComponent<Props, Stat
             currentRoles = (
                 <FormattedMessage
                     id='team_members_dropdown.teamAdmin'
-                    defaultMessage='Team Admin'
+                    defaultMessage='Division Admin'
                 />
             );
         } else {
@@ -258,7 +258,7 @@ export default class TeamMembersDropdown extends React.PureComponent<Props, Stat
         const menuMakeAdmin = (
             <Menu.ItemAction
                 onClick={this.handleMakeAdmin}
-                text={Utils.localizeMessage('team_members_dropdown.makeAdmin', 'Make Team Admin')}
+                text={Utils.localizeMessage('team_members_dropdown.makeAdmin', 'Make Division Admin')}
             />
         );
         const menuMakeMember = (

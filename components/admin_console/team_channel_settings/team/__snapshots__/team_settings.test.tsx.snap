@@ -8,7 +8,7 @@ exports[`admin_console/team_channel_settings/team/TeamSettings should match snap
     className="admin-console__header"
   >
     <MemoizedFormattedMessage
-      defaultMessage="{siteName} Teams"
+      defaultMessage="{siteName} Divisions"
       id="admin.team_settings.groupsPageTitle"
       values={
         Object {
@@ -26,7 +26,7 @@ exports[`admin_console/team_channel_settings/team/TeamSettings should match snap
       <AdminPanel
         className=""
         id="teams"
-        subtitleDefault="Manage team settings."
+        subtitleDefault="Manage division settings."
         subtitleId="admin.team_settings.description"
         titleDefault="Teams"
         titleId="admin.team_settings.title"

@@ -660,7 +660,7 @@ ProfilePopoverState
                 <span className='user-popover__role'>
                     {Utils.localizeMessage(
                         'admin.permissions.roles.team_admin.name',
-                        'Team Admin',
+                        'Division Admin',
                     )}
                 </span>
             );

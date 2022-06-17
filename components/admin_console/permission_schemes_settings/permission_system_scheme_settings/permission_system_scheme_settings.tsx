@@ -370,7 +370,7 @@ export default class PermissionSystemSchemeSettings extends React.PureComponent<
                                 <span>
                                     <FormattedMessage
                                         id='admin.permissions.systemScheme.introBanner'
-                                        defaultMessage='Configure the default permissions for Team Admins, Channel Admins and other members. This scheme is inherited by all teams unless a <link>Team Override Scheme</link>is applied in specific teams.'
+                                        defaultMessage='Configure the default permissions for Division Admins, Channel Admins and other members. This scheme is inherited by all teams unless a <link>Team Override Scheme</link>is applied in specific teams.'
                                         values={{
                                             link: (msg: React.ReactNode) => (
                                                 <a
@@ -472,9 +472,9 @@ export default class PermissionSystemSchemeSettings extends React.PureComponent<
                             open={this.state.openRoles.team_admin}
                             onToggle={() => this.toggleRole('team_admin')}
                             titleId={t('admin.permissions.systemScheme.teamAdminsTitle')}
-                            titleDefault='Team Administrators'
+                            titleDefault='Division Administrators'
                             subtitleId={t('admin.permissions.systemScheme.teamAdminsDescription')}
-                            subtitleDefault='Permissions granted to team creators and any users promoted to Team Administrator.'
+                            subtitleDefault='Permissions granted to team creators and any users promoted to Division Administrator.'
                         >
                             <PermissionsTree
                                 parentRole={this.state.roles.all_users}

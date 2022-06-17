@@ -51,7 +51,7 @@ export default function UsersToRemoveRole(props: GroupUsersRoleProps) {
         break;
 
     case 'team_admin':
-        localizedRole = intl.formatMessage({id: 'admin.user_grid.team_admin', defaultMessage: 'Team Admin'});
+        localizedRole = intl.formatMessage({id: 'admin.user_grid.team_admin', defaultMessage: 'Division Admin'});
         break;
 
     case 'channel_admin':

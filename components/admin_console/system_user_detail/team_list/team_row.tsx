@@ -60,7 +60,7 @@ export default class TeamRow extends React.PureComponent<Props> {
             return (
                 <FormattedMessage
                     id={'admin.systemUserDetail.teamList.teamRole.admin'}
-                    defaultMessage={'Team Admin'}
+                    defaultMessage={'Division Admin'}
                 />
             );
         }
@@ -68,7 +68,7 @@ export default class TeamRow extends React.PureComponent<Props> {
             return (
                 <FormattedMessage
                     id={'admin.systemUserDetail.teamList.teamRole.member'}
-                    defaultMessage={'Team Member'}
+                    defaultMessage={'Division Member'}
                 />
             );
         }

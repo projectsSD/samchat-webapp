@@ -29,7 +29,7 @@ describe('Manage Members', () => {
         });
     });
 
-    it('MM-T2331 System Admin can promote Member to Team Admin', () => {
+    it('MM-T2331 System Admin can promote Member to Division Admin', () => {
         // # Go to Town Square
         cy.visit(`/${testTeam.name}/channels/town-square`);
 
@@ -39,15 +39,15 @@ describe('Manage Members', () => {
         // # Open member dropdown
         cy.get(`#teamMembersDropdown_${testUser.username}`).should('be.visible').click();
 
-        // # Click Make Team Admin
-        cy.get(`#teamMembersDropdown_${testUser.username} ~ div button:contains(Make Team Admin)`).should('be.visible').click();
+        // # Click Make Division Admin
+        cy.get(`#teamMembersDropdown_${testUser.username} ~ div button:contains(Make Division Admin)`).should('be.visible').click();
 
-        // * Verify dropdown shows that user is now a Team Admin
-        cy.get(`#teamMembersDropdown_${testUser.username} span:contains(Team Admin)`).should('be.visible');
+        // * Verify dropdown shows that user is now a Division Admin
+        cy.get(`#teamMembersDropdown_${testUser.username} span:contains(Division Admin)`).should('be.visible');
     });
 
-    it('MM-T2334 Team Admin can promote Member to Team Admin', () => {
-        // # Make the test user a Team Admin
+    it('MM-T2334 Division Admin can promote Member to Division Admin', () => {
+        // # Make the test user a Division Admin
         promoteToChannelOrTeamAdmin(testUser.id, testTeam.id, 'teams');
 
         // # Create a new user
@@ -66,17 +66,17 @@ describe('Manage Members', () => {
                 // # Open member dropdown
                 cy.get(`#teamMembersDropdown_${user.username}`).should('be.visible').click();
 
-                // # Click Make Team Admin
-                cy.get(`#teamMembersDropdown_${user.username} ~ div button:contains(Make Team Admin)`).should('be.visible').click();
+                // # Click Make Division Admin
+                cy.get(`#teamMembersDropdown_${user.username} ~ div button:contains(Make Division Admin)`).should('be.visible').click();
 
-                // * Verify dropdown shows that user is now a Team Admin
-                cy.get(`#teamMembersDropdown_${user.username} span:contains(Team Admin)`).should('be.visible');
+                // * Verify dropdown shows that user is now a Division Admin
+                cy.get(`#teamMembersDropdown_${user.username} span:contains(Division Admin)`).should('be.visible');
             });
         });
     });
 
     it('MM-T2335 Remove a team member and ensure they cannot rejoin if the team is not joinable', () => {
-        // # Make the test user a Team Admin
+        // # Make the test user a Division Admin
         promoteToChannelOrTeamAdmin(testUser.id, testTeam.id, 'teams');
 
         // # Create a new user
@@ -99,8 +99,8 @@ describe('Manage Members', () => {
                         // # Open member dropdown
                         cy.get(`#teamMembersDropdown_${user.username}`).should('be.visible').click();
 
-                        // # Click Remove from Team
-                        cy.get(`#teamMembersDropdown_${user.username} ~ div button:contains(Remove from Team)`).should('be.visible').click();
+                        // # Click Remove from Division
+                        cy.get(`#teamMembersDropdown_${user.username} ~ div button:contains(Remove from Division)`).should('be.visible').click();
 
                         // * Verify teammate no longer appears
                         cy.get(`#teamMembersDropdown_${user.username}`).should('not.exist');
@@ -144,8 +144,8 @@ describe('Manage Members', () => {
                 // # Open member dropdown
                 cy.get(`#teamMembersDropdown_${user.username}`).should('be.visible').click();
 
-                // # Click Remove from Team
-                cy.get(`#teamMembersDropdown_${user.username} ~ div button:contains(Remove from Team)`).should('be.visible').click();
+                // # Click Remove from Division
+                cy.get(`#teamMembersDropdown_${user.username} ~ div button:contains(Remove from Division)`).should('be.visible').click();
 
                 // * Verify teammate no longer appears
                 cy.get(`#teamMembersDropdown_${user.username}`).should('not.exist');
@@ -167,7 +167,7 @@ describe('Manage Members', () => {
                     // # Go to the invite link
                     cy.visit(inviteLink);
 
-                    // * Verify that the user has rejoined the team
+                    // * Verify that the user has rejoined the division
                     cy.uiGetLHSHeader().should('contain', testTeam.display_name);
                 });
             });

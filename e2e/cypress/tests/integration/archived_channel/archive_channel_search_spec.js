@@ -69,8 +69,8 @@ describe('archive tests while preventing viewing archived channels', () => {
         });
     });
 
-    it('MM-T1708 An archived channel can\'t be searched when "Allow users to view archived channels" is set to False in "Site Configuration > Users and Teams" in the System Console', () => {
-        // # First, as system admin, ensure that System Console > Users and Teams > Allow users to view archived channels is set to `false`.
+    it('MM-T1708 An archived channel can\'t be searched when "Allow users to view archived channels" is set to False in "Site Configuration > Users and Divisions" in the System Console', () => {
+        // # First, as system admin, ensure that System Console > Users and Divisions > Allow users to view archived channels is set to `false`.
         cy.apiUpdateConfig({
             TeamSettings: {
                 ExperimentalViewArchivedChannels: false,

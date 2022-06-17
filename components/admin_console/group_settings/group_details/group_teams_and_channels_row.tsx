@@ -73,7 +73,7 @@ State
         const teamAdmin = (
             <FormattedMessage
                 id='admin.group_teams_and_channels_row.teamAdmin'
-                defaultMessage='Team Admin'
+                defaultMessage='Division Admin'
             />
         );
         const member = (

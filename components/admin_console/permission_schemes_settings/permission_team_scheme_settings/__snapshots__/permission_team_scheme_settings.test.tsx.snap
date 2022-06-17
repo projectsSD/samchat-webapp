@@ -63,7 +63,7 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         >
           <span>
             <MemoizedFormattedMessage
-              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Team Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
+              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Division Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
               id="admin.permissions.teamScheme.introBanner"
               values={
                 Object {
@@ -256,9 +256,9 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         isDisabled={false}
         onToggle={[Function]}
         open={true}
-        subtitleDefault="Permissions granted to team creators and any users promoted to Team Administrator."
+        subtitleDefault="Permissions granted to team creators and any users promoted to Division Administrator."
         subtitleId="admin.permissions.systemScheme.teamAdminsDescription"
-        titleDefault="Team Administrators"
+        titleDefault="Division Administrators"
         titleId="admin.permissions.systemScheme.teamAdminsTitle"
       >
         <Connect(PermissionsTree)
@@ -394,7 +394,7 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         >
           <span>
             <MemoizedFormattedMessage
-              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Team Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
+              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Division Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
               id="admin.permissions.teamScheme.introBanner"
               values={
                 Object {
@@ -611,9 +611,9 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         isDisabled={false}
         onToggle={[Function]}
         open={true}
-        subtitleDefault="Permissions granted to team creators and any users promoted to Team Administrator."
+        subtitleDefault="Permissions granted to team creators and any users promoted to Division Administrator."
         subtitleId="admin.permissions.systemScheme.teamAdminsDescription"
-        titleDefault="Team Administrators"
+        titleDefault="Division Administrators"
         titleId="admin.permissions.systemScheme.teamAdminsTitle"
       >
         <Connect(PermissionsTree)
@@ -749,7 +749,7 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         >
           <span>
             <MemoizedFormattedMessage
-              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Team Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
+              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Division Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
               id="admin.permissions.teamScheme.introBanner"
               values={
                 Object {
@@ -968,9 +968,9 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         isDisabled={false}
         onToggle={[Function]}
         open={true}
-        subtitleDefault="Permissions granted to team creators and any users promoted to Team Administrator."
+        subtitleDefault="Permissions granted to team creators and any users promoted to Division Administrator."
         subtitleId="admin.permissions.systemScheme.teamAdminsDescription"
-        titleDefault="Team Administrators"
+        titleDefault="Division Administrators"
         titleId="admin.permissions.systemScheme.teamAdminsTitle"
       >
         <Connect(PermissionsTree)
@@ -1177,7 +1177,7 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         >
           <span>
             <MemoizedFormattedMessage
-              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Team Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
+              defaultMessage="<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Division Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>."
               id="admin.permissions.teamScheme.introBanner"
               values={
                 Object {
@@ -1396,9 +1396,9 @@ exports[`components/admin_console/permission_schemes_settings/permission_team_sc
         isDisabled={false}
         onToggle={[Function]}
         open={true}
-        subtitleDefault="Permissions granted to team creators and any users promoted to Team Administrator."
+        subtitleDefault="Permissions granted to team creators and any users promoted to Division Administrator."
         subtitleId="admin.permissions.systemScheme.teamAdminsDescription"
-        titleDefault="Team Administrators"
+        titleDefault="Division Administrators"
         titleId="admin.permissions.systemScheme.teamAdminsTitle"
       >
         <Connect(PermissionsTree)

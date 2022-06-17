@@ -295,7 +295,7 @@ export default class TeamSidebar extends React.PureComponent<Props, State> {
                         tip={
                             <FormattedMessage
                                 id='navbar_dropdown.create'
-                                defaultMessage='Create a Team'
+                                defaultMessage='Create a Division'
                             />
                         }
                         content={plusIcon}

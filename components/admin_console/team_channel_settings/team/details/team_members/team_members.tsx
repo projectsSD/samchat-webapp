@@ -217,7 +217,7 @@ export default class TeamMembers extends React.PureComponent<Props, State> {
                         name: (
                             <FormattedMessage
                                 id='admin.user_grid.team_admin'
-                                defaultMessage='Team Admin'
+                                defaultMessage='Division Admin'
                             />
                         ),
                         value: false,

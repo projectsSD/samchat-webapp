@@ -58,7 +58,7 @@ exports[`components/select_team/components/SelectTeamItem should match snapshot,
       component="span"
       title={
         Object {
-          "defaultMessage": "Join Team Icon",
+          "defaultMessage": "Join Division Icon",
           "id": "select_team.join.icon",
         }
       }
@@ -114,7 +114,7 @@ exports[`components/select_team/components/SelectTeamItem should match snapshot,
       component="span"
       title={
         Object {
-          "defaultMessage": "Join Team Icon",
+          "defaultMessage": "Join Division Icon",
           "id": "select_team.join.icon",
         }
       }
@@ -249,7 +249,7 @@ exports[`components/select_team/components/SelectTeamItem should match snapshot,
                   component="span"
                   title={
                     Object {
-                      "defaultMessage": "Join Team Icon",
+                      "defaultMessage": "Join Division Icon",
                       "id": "select_team.join.icon",
                     }
                   }
@@ -301,7 +301,7 @@ exports[`components/select_team/components/SelectTeamItem should match snapshot,
       component="span"
       title={
         Object {
-          "defaultMessage": "Join Team Icon",
+          "defaultMessage": "Join Division Icon",
           "id": "select_team.join.icon",
         }
       }

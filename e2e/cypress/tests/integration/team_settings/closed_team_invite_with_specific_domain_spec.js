@@ -14,7 +14,7 @@ import {generateRandomUser} from '../../support/api/user';
 
 import {allowOnlyUserFromSpecificDomain, inviteUserByEmail, verifyEmailInviteAndVisitLink, signupAndVerifyTutorial} from './helpers';
 
-describe('Team Settings', () => {
+describe('Division Settings', () => {
     const sysadmin = getAdminAccount();
     const {username, email, password} = generateRandomUser();
     const emailDomain = 'sample.mattermost.com';
@@ -41,7 +41,7 @@ describe('Team Settings', () => {
         });
     });
 
-    it('MM-T386 Invite new user to closed team with \'Allow only users with a specific email domain to join this team\' set to \'sample.mattermost.com\'', () => {
+    it('MM-T386 Invite new user to closed team with \'Allow only users with a specific email domain to join this division\' set to \'sample.mattermost.com\'', () => {
         // # Allow only users from 'sample.mattermost.com' domain
         allowOnlyUserFromSpecificDomain(emailDomain);
 

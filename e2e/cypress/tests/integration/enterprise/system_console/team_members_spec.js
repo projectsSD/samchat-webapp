@@ -136,7 +136,7 @@ describe('Team members test', () => {
         // * Verify that the menu is opened
         cy.get('.Menu__content').should('be.visible').within(() => {
             // # Make the user an admin
-            cy.findByText('Make Team Admin').should('be.visible').click();
+            cy.findByText('Make Division Admin').should('be.visible').click();
         });
 
         // # Search for user2
@@ -162,7 +162,7 @@ describe('Team members test', () => {
         cy.get('#teamMembers .DataGrid_loading').should('not.exist');
 
         // * Assert that the user is now saved as an admin
-        cy.get('#teamMembers .DataGrid_rows').children(0).should('contain', user1.email).and('not.contain', 'New').and('contain', 'Team Admin');
+        cy.get('#teamMembers .DataGrid_rows').children(0).should('contain', user1.email).and('not.contain', 'New').and('contain', 'Division Admin');
 
         // # Open the user role dropdown menu
         cy.get(`#userGridRoleDropdown_${user1.username}`).click();
@@ -170,7 +170,7 @@ describe('Team members test', () => {
         // * Verify that the menu is opened
         cy.get('.Menu__content').should('be.visible').within(() => {
             // # Make the user a regular member again
-            cy.findByText('Make Team Member').should('be.visible').click();
+            cy.findByText('Make Division Member').should('be.visible').click();
         });
 
         // * Assert user1 is now back to being a regular member

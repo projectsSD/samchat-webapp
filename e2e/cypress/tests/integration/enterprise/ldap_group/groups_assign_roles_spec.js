@@ -113,7 +113,7 @@ describe('LDAP Group Sync', () => {
             const name = el[0].rows[1].cells[0].innerText;
             cy.findByTestId(`${name}_current_role`).scrollIntoView().should('contain.text', 'Member');
 
-            // # Change the option to the admin roles (Channel Admin/Team Admin) for each row
+            // # Change the option to the admin roles (Channel Admin/Division Admin) for each row
             cy.findByTestId(`${name}_current_role`).scrollIntoView().click();
             cy.get(`#${name}_change_role_options button`).scrollIntoView().click();
 

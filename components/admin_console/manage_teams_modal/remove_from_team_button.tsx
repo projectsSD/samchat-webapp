@@ -23,7 +23,7 @@ const RemoveFromTeamButton = ({teamId, handleRemoveUserFromTeam}: Props) => {
         >
             <FormattedMessage
                 id='team_members_dropdown.leave_team'
-                defaultMessage='Remove from Team'
+                defaultMessage='Remove from Division'
             />
         </button>
     );

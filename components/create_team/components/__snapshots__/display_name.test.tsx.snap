@@ -10,7 +10,7 @@ exports[`/components/create_team/components/display_name should match snapshot 1
     />
     <h5>
       <MemoizedFormattedMessage
-        defaultMessage="Team Name"
+        defaultMessage="Division Name"
         id="create_team.display_name.teamName"
         tagName="strong"
       />
@@ -41,7 +41,7 @@ exports[`/components/create_team/components/display_name should match snapshot 1
     </div>
     <div>
       <MemoizedFormattedMessage
-        defaultMessage="Name your team in any language. Your team name shows in menus and headings."
+        defaultMessage="Name your division in any language. Your division name shows in menus and headings."
         id="create_team.display_name.nameHelp"
       />
     </div>

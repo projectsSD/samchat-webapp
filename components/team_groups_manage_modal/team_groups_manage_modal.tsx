@@ -124,9 +124,9 @@ class TeamGroupsManageModal extends React.PureComponent<Props, State> {
     renderRow = (item: Group, listModal: ListModal) => {
         let title;
         if (item.scheme_admin) {
-            title = Utils.localizeMessage('team_members_dropdown.teamAdmins', 'Team Admins');
+            title = Utils.localizeMessage('team_members_dropdown.teamAdmins', 'Division Admins');
         } else {
-            title = Utils.localizeMessage('team_members_dropdown.teamMembers', 'Team Members');
+            title = Utils.localizeMessage('team_members_dropdown.teamMembers', 'Division Members');
         }
 
         return (
@@ -172,12 +172,12 @@ class TeamGroupsManageModal extends React.PureComponent<Props, State> {
                             <Menu.ItemAction
                                 show={!item.scheme_admin}
                                 onClick={() => this.setTeamMemberStatus(item, listModal, true)}
-                                text={Utils.localizeMessage('team_members_dropdown.makeTeamAdmins', 'Make Team Admins')}
+                                text={Utils.localizeMessage('team_members_dropdown.makeTeamAdmins', 'Make Division Admins')}
                             />
                             <Menu.ItemAction
                                 show={Boolean(item.scheme_admin)}
                                 onClick={() => this.setTeamMemberStatus(item, listModal, false)}
-                                text={Utils.localizeMessage('team_members_dropdown.makeTeamMembers', 'Make Team Members')}
+                                text={Utils.localizeMessage('team_members_dropdown.makeTeamMembers', 'Make Division Members')}
                             />
                             <Menu.ItemAction
                                 onClick={() => this.onClickRemoveGroup(item, listModal)}
@@ -208,7 +208,7 @@ class TeamGroupsManageModal extends React.PureComponent<Props, State> {
                 <ConfirmModal
                     show={this.state.showConfirmModal}
                     title={formatMessage({id: 'remove_group_confirm_title', defaultMessage: 'Remove Group and {memberCount, number} {memberCount, plural, one {Member} other {Members}}'}, {memberCount})}
-                    message={formatMessage({id: 'remove_group_confirm_message', defaultMessage: '{memberCount, number} {memberCount, plural, one {member} other {members}} associated to this group will be removed from the team. Are you sure you wish to remove this group and {memberCount} {memberCount, plural, one {member} other {members}}?'}, {memberCount})}
+                    message={formatMessage({id: 'remove_group_confirm_message', defaultMessage: '{memberCount, number} {memberCount, plural, one {member} other {members}} associated to this group will be removed from the division. Are you sure you wish to remove this group and {memberCount} {memberCount, plural, one {member} other {members}}?'}, {memberCount})}
                     confirmButtonText={formatMessage({id: 'remove_group_confirm_button', defaultMessage: 'Yes, Remove Group and {memberCount, plural, one {Member} other {Members}}'}, {memberCount})}
                     onConfirm={this.handleDeleteConfirmed}
                     onCancel={this.handleDeleteCanceled}

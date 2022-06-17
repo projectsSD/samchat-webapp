@@ -99,7 +99,7 @@ describe('Guest Account - Guest User Removal Experience', () => {
         // * Verify if status is displayed indicating guest user is removed from the channel
         cy.getLastPost().
             should('contain', 'System').
-            and('contain', `You and @${guest.username} joined the team.`).
+            and('contain', `You and @${guest.username} joined the division.`).
             and('contain', `@${guest.username} was removed from the channel.`);
     });
 });

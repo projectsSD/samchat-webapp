@@ -46,7 +46,7 @@ describe('Guest Account - Guest User Invitation Flow', () => {
         });
     });
 
-    it('MM-T1336 Invite Guests - Existing Team Member', () => {
+    it('MM-T1336 Invite Guests - Existing Division Member', () => {
         cy.apiCreateUser().then(({user: newUser}) => {
             cy.apiAddUserToTeam(testTeam.id, newUser.id).then(() => {
                 // # Search and add an existing member by username who is part of the team
@@ -65,7 +65,7 @@ describe('Guest Account - Guest User Invitation Flow', () => {
                 invitePeople(guest.first_name, 1, guest.username, 'Off-Topic');
 
                 // * Verify the content and message in next screen
-                verifyInvitationSuccess(guest.username, testTeam, 'This guest has been added to the team and channel.');
+                verifyInvitationSuccess(guest.username, testTeam, 'This guest has been added to the division and channel.');
 
                 // # Search and add an existing guest by last name, who is part of the team and channel
                 invitePeople(guest.last_name, 1, guest.username, 'Off-Topic');
@@ -91,7 +91,7 @@ describe('Guest Account - Guest User Invitation Flow', () => {
         cy.apiCreateGuestUser().then(({guest}) => {
             invitePeople(guest.email, 1, guest.username);
 
-            verifyInvitationSuccess(guest.username, testTeam, 'This guest has been added to the team and channel.', true);
+            verifyInvitationSuccess(guest.username, testTeam, 'This guest has been added to the division and channel.', true);
         });
     });
 

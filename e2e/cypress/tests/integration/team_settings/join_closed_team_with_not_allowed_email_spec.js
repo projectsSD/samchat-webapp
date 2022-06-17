@@ -13,7 +13,7 @@
 import {getRandomId, stubClipboard} from '../../utils';
 import * as TIMEOUTS from '../../fixtures/timeouts';
 
-describe('Team Settings', () => {
+describe('Division Settings', () => {
     const randomId = getRandomId();
     const emailDomain = 'sample.mattermost.com';
     let testTeam;
@@ -39,15 +39,15 @@ describe('Team Settings', () => {
         });
     });
 
-    it('MM-T387 - Try to join a closed team from a NON-mattermost email address via "Get Team Invite Link" while "Allow only users with a specific email domain to join this team" set to "sample.mattermost.com"', () => {
+    it('MM-T387 - Try to join a closed team from a NON-mattermost email address via "Get Team Invite Link" while "Allow only users with a specific email domain to join this division" set to "sample.mattermost.com"', () => {
         stubClipboard().as('clipboard');
 
-        // # Open team menu and click 'Team Settings'
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click 'Division Settings'
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
-            // # Click on the 'Allow only users with a specific email domain to join this team' edit button
+            // # Click on the 'Allow only users with a specific email domain to join this division' edit button
             cy.get('#allowed_domainsEdit').should('be.visible').click();
 
             // # Set 'sample.mattermost.com' as the only allowed email domain, save then close
@@ -87,12 +87,12 @@ describe('Team Settings', () => {
     });
 
     it('MM-T2341 Cannot add a user to a team if the user\'s email is not from the correct domain', () => {
-        // # Open team menu and click 'Team Settings'
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click 'Division Settings'
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
-            // # Click on the 'Allow any user with an account on this server to join this team' edit button
+            // # Click on the 'Allow any user with an account on this server to join this division' edit button
             cy.get('#open_inviteEdit').should('be.visible').click();
 
             // # Enable any user with an account on the server to join the team
@@ -102,7 +102,7 @@ describe('Team Settings', () => {
             cy.uiSave();
             cy.get('#open_inviteDesc').should('be.visible').and('have.text', 'Yes');
 
-            // # Click on the 'Allow only users with a specific email domain to join this team' edit button
+            // # Click on the 'Allow only users with a specific email domain to join this division' edit button
             cy.get('#allowed_domainsEdit').should('be.visible').click();
 
             // # Set 'sample.mattermost.com' as the only allowed email domain and save

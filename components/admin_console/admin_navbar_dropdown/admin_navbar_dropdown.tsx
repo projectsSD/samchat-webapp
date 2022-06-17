@@ -68,7 +68,7 @@ class AdminNavbarDropdown extends React.PureComponent<Props> {
                     icon={
                         <LocalizedIcon
                             className='fa fa-exchange'
-                            title={{id: t('select_team.icon'), defaultMessage: 'Select Team Icon'}}
+                            title={{id: t('select_team.icon'), defaultMessage: 'Select Division Icon'}}
                         />
                     }
                     text={formatMessage({id: 'admin.nav.switch', defaultMessage: 'Team Selection'})}

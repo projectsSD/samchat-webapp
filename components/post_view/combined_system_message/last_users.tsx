@@ -29,11 +29,11 @@ const typeMessage = {
     },
     [Posts.POST_TYPES.ADD_TO_TEAM]: {
         id: t('last_users_message.added_to_team.type'),
-        defaultMessage: 'were **added to the team** by {actor}.',
+        defaultMessage: 'were **added to the division** by {actor}.',
     },
     [Posts.POST_TYPES.JOIN_TEAM]: {
         id: t('last_users_message.joined_team.type'),
-        defaultMessage: '**joined the team**.',
+        defaultMessage: '**joined the division**.',
     },
     [Posts.POST_TYPES.LEAVE_TEAM]: {
         id: t('last_users_message.left_team.type'),
@@ -41,7 +41,7 @@ const typeMessage = {
     },
     [Posts.POST_TYPES.REMOVE_FROM_TEAM]: {
         id: t('last_users_message.removed_from_team.type'),
-        defaultMessage: 'were **removed from the team**.',
+        defaultMessage: 'were **removed from the division**.',
     },
 };
 

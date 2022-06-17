@@ -64,10 +64,10 @@ describe('Guest Account - Guest User Experience', () => {
         // * Verify reduced options in Team Menu
         const missingMainOptions = [
             'Invite People',
-            'Team Settings',
+            'Division Settings',
             'Manage Members',
             'Join Another Team',
-            'Create a Team',
+            'Create a Division',
         ];
         missingMainOptions.forEach((missingOption) => {
             cy.uiGetLHSTeamMenu().should('not.contain', missingOption);
@@ -75,7 +75,7 @@ describe('Guest Account - Guest User Experience', () => {
 
         const includeMainOptions = [
             'View Members',
-            'Leave Team',
+            'Leave Division',
         ];
         includeMainOptions.forEach((includeOption) => {
             cy.uiGetLHSTeamMenu().findByText(includeOption);
@@ -117,7 +117,7 @@ describe('Guest Account - Guest User Experience', () => {
         // * Verify Guest User can see only 1 additional channel in LHS plus off-topic and off-topic
         cy.uiGetLhsSection('CHANNELS').find('.SidebarChannel').should('have.length', 3);
 
-        // * Verify list of Users a Guest User can see in Team Members dialog
+        // * Verify list of Users a Guest User can see in Division Members dialog
         cy.uiOpenTeamMenu('View Members');
         cy.get('#searchableUserListTotal').should('be.visible').and('have.text', '1 - 2 members of 2 total');
     });
@@ -136,8 +136,8 @@ describe('Guest Account - Guest User Experience', () => {
         const includeOptions = [
             'Invite People',
             'View Members',
-            'Leave Team',
-            'Create a Team',
+            'Leave Division',
+            'Create a Division',
         ];
         includeOptions.forEach((option) => {
             cy.uiGetLHSTeamMenu().findByText(option);

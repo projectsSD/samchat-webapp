@@ -139,7 +139,7 @@ exports[`plugins/MainMenuActions should match snapshot in mobile view with some 
               "type": [Function],
             }
           }
-          extraText="Add people to the team"
+          extraText="Add people to the division"
           icon={
             <i
               className="fa fa-user-plus"
@@ -179,7 +179,7 @@ exports[`plugins/MainMenuActions should match snapshot in mobile view with some 
           id="teamSettings"
           modalId="team_settings"
           show={true}
-          text="Team Settings"
+          text="Division Settings"
         />
       </Connect(TeamPermissionGate)>
       <Connect(TeamPermissionGate)
@@ -294,7 +294,7 @@ exports[`plugins/MainMenuActions should match snapshot in mobile view with some 
           }
           id="createTeam"
           show={true}
-          text="Create a Team"
+          text="Create a Division"
           to="/create_team"
         />
       </Connect(SystemPermissionGate)>
@@ -323,7 +323,7 @@ exports[`plugins/MainMenuActions should match snapshot in mobile view with some 
         id="leaveTeam"
         modalId="leave_team"
         show={false}
-        text="Leave Team"
+        text="Leave Division"
       />
     </MenuGroup>
     <MenuGroup>
@@ -468,7 +468,7 @@ exports[`plugins/MainMenuActions should match snapshot in web view 1`] = `
               "type": [Function],
             }
           }
-          extraText="Add people to the team"
+          extraText="Add people to the division"
           icon={false}
           id="invitePeople"
           modalId="invitation"
@@ -497,7 +497,7 @@ exports[`plugins/MainMenuActions should match snapshot in web view 1`] = `
           id="teamSettings"
           modalId="team_settings"
           show={true}
-          text="Team Settings"
+          text="Division Settings"
         />
       </Connect(TeamPermissionGate)>
       <Connect(TeamPermissionGate)
@@ -600,7 +600,7 @@ exports[`plugins/MainMenuActions should match snapshot in web view 1`] = `
         id="leaveTeam"
         modalId="leave_team"
         show={false}
-        text="Leave Team"
+        text="Leave Division"
       />
     </MenuGroup>
     <MenuGroup>
@@ -617,7 +617,7 @@ exports[`plugins/MainMenuActions should match snapshot in web view 1`] = `
           id="createTeam"
           show={true}
           sibling={false}
-          text="Create a Team"
+          text="Create a Division"
           to="/create_team"
         />
       </Connect(SystemPermissionGate)>

@@ -100,14 +100,14 @@ describe('System Console', () => {
         cy.get('#multiSelectList>div').children().eq(0).click();
         cy.get('#saveItems').click();
 
-        // # Change role from Member to Team Admin
-        changeRole('team', 'Member', 'Team Admin');
+        // # Change role from Member to Division Admin
+        changeRole('team', 'Member', 'Division Admin');
 
         // # Save the setting and navigate back to page
         saveAndNavigateBackTo(teamName, teamDisplayName, 'teams');
 
-        // # Change role from Team Admin to Member
-        changeRole('team', 'Team Admin', 'Member');
+        // # Change role from Division Admin to Member
+        changeRole('team', 'Division Admin', 'Member');
 
         // # Save the setting and navigate back to page
         saveAndNavigateBackTo(teamName, teamDisplayName, 'teams');
@@ -155,14 +155,14 @@ describe('System Console', () => {
         cy.get('#multiSelectList>div').children().eq(0).click();
         cy.get('#saveItems').click();
 
-        // # Change role from Member to Team Admin
-        changeRole('team', 'Member', 'Team Admin');
+        // # Change role from Member to Division Admin
+        changeRole('team', 'Member', 'Division Admin');
 
         // # Save the setting and navigate back to page
         saveAndNavigateBackTo(teamName, teamDisplayName, 'teams');
 
-        // * Check to make the the current role text is displayed as Team Admin
-        cy.get('#team_groups').scrollIntoView().findByTestId('current-role').should('have.text', 'Team Admin');
+        // * Check to make the the current role text is displayed as Division Admin
+        cy.get('#team_groups').scrollIntoView().findByTestId('current-role').should('have.text', 'Division Admin');
     });
 
     it('MM-20646 - System Admin can map roles to groups from Channel Configuration screen', () => {

@@ -17,7 +17,7 @@ describe('stores/LocalStorageStore', () => {
         assert.equal(LocalStorageStore.getPreviousTeamId(userId2), teamId2);
     });
 
-    test('should persist previous channel name per team and user', () => {
+    test('should persist previous channel name per division and user', () => {
         const userId1 = 'userId1';
         const userId2 = 'userId2';
         const teamId1 = 'teamId1';

@@ -274,7 +274,7 @@ describe('group configuration', () => {
             // # Add a new team
             addGroupSyncable('team', (teamName) => {
                 // # Update the role
-                const newRole = 'Team Admin';
+                const newRole = 'Division Admin';
                 changeRole(teamName, newRole);
 
                 // # Click away
@@ -308,7 +308,7 @@ describe('group configuration', () => {
             teamOrChannelIsPresent(testTeam.display_name);
 
             // # Change the role
-            const newRole = 'Team Admin';
+            const newRole = 'Division Admin';
             changeRole(testTeam.display_name, newRole);
 
             // # Click away
@@ -341,7 +341,7 @@ describe('group configuration', () => {
             teamOrChannelIsPresent(testTeam.display_name);
 
             // # Change the role
-            changeRole(testTeam.display_name, 'Team Admin');
+            changeRole(testTeam.display_name, 'Division Admin');
 
             // # Click away
             cy.get('.sidebar-section').first().click();
@@ -370,7 +370,7 @@ describe('group configuration', () => {
             teamOrChannelIsPresent(testTeam.display_name);
 
             // # Change the role
-            changeRole(testTeam.display_name, 'Team Admin');
+            changeRole(testTeam.display_name, 'Division Admin');
 
             removeAndConfirm(testTeam.display_name);
 

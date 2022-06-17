@@ -37,7 +37,7 @@ describe('Multi Team and DM', () => {
         });
     });
 
-    it('MM-T439 Town Square is not marked as unread for existing users when a new user is added to the team', () => {
+    it('MM-T439 Town Square is not marked as unread for existing users when a new user is added to the division', () => {
         // # Open 'Advanced' section of 'Settings' modal
         cy.uiOpenSettingsModal('Advanced').within(() => {
             // # Open 'Enable Join/Leave Messages' and turn it off

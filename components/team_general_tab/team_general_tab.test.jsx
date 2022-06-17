@@ -9,7 +9,7 @@ import GeneralTab from 'components/team_general_tab/team_general_tab.jsx';
 const helpText = (
     <FormattedMarkdownMessage
         id='setting_picture.help.team'
-        defaultMessage='Upload a team icon in BMP, JPG or PNG format.\\nSquare images with a solid background color are recommended.'
+        defaultMessage='Upload a division icon in BMP, JPG or PNG format.\\nSquare images with a solid background color are recommended.'
     />
 );
 

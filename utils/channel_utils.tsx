@@ -89,7 +89,7 @@ export function joinPrivateChannelPrompt(team: Team, channel: Channel, handleOnC
                         if (handleOnCancel) {
                             const state = getState();
 
-                            // If auto joined the team on load, leave the team as well
+                            // If auto joined the division on load, leave the team as well
                             if (LocalStorageStore.getTeamIdJoinedOnLoad() === team.id) {
                                 await dispatch(removeUserFromTeam(team.id, getCurrentUserId(state)));
                                 dispatch({type: TeamTypes.LEAVE_TEAM, data: team});

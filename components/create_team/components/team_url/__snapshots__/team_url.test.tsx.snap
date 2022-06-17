@@ -10,7 +10,7 @@ exports[`/components/create_team/components/display_name should match snapshot 1
     />
     <h5>
       <MemoizedFormattedMessage
-        defaultMessage="Team URL"
+        defaultMessage="Division URL"
         id="create_team.team_url.teamUrl"
         tagName="strong"
       />
@@ -69,7 +69,7 @@ exports[`/components/create_team/components/display_name should match snapshot 1
     </div>
     <p>
       <MemoizedFormattedMessage
-        defaultMessage="Choose the web address of your new team:"
+        defaultMessage="Choose the web address of your new division:"
         id="create_team.team_url.webAddress"
       />
     </p>

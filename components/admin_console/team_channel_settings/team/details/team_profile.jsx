@@ -181,7 +181,7 @@ export function TeamProfile({team, isArchived, isDisabled, onToggleArchive, save
                             <div className='row row-bottom-padding'>
                                 <FormattedMarkdownMessage
                                     id='admin.team_settings.team_detail.teamName'
-                                    defaultMessage='**Team Name**:'
+                                    defaultMessage='**Division Name**:'
                                 />
                                 <br/>
                                 {team.display_name}
@@ -189,7 +189,7 @@ export function TeamProfile({team, isArchived, isDisabled, onToggleArchive, save
                             <div className='row'>
                                 <FormattedMarkdownMessage
                                     id='admin.team_settings.team_detail.teamDescription'
-                                    defaultMessage='**Team Description**:'
+                                    defaultMessage='**Division Description**:'
                                 />
                                 <br/>
                                 {team.description || <span className='greyed-out'>{Utils.localizeMessage('admin.team_settings.team_detail.profileNoDescription', 'No team description added.')}</span>}

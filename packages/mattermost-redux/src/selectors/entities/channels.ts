@@ -144,7 +144,7 @@ export function getChannelMembersInChannels(state: GlobalState): RelationOneToOn
 }
 
 // makeGetChannel returns a selector that returns a channel from the store with the following filled in for DM/GM channels:
-// - The display_name set to the other user(s) names, following the Teammate Name Display setting
+// - The display_name set to the other user(s) names, following the Divisionmate Name Display setting
 // - The teammate_id for DM channels
 // - The status of the other user in a DM channel
 export function makeGetChannel(): (state: GlobalState, props: {id: string}) => Channel {

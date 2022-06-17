@@ -1725,7 +1725,7 @@
   "admin.team.invalidateEmailInvitesFail": "보류 중인 전자우편 초대를 무효화 할 수 없습니다: {error}",
   "admin.team.invalidateEmailInvitesSuccess": "보류 중인 전자우편 초대가 무효화 되었습니다",
   "admin.team.invalidateEmailInvitesTitle": "보류 중인 전자우편 초대를 무효화",
-  "admin.team.maxChannelsDescription": "Maximum total number of users per team, including both active and inactive users.",
+  "admin.team.maxChannelsDescription": "Maximum total number of users per division, including both active and inactive users.",
   "admin.team.maxChannelsExample": "예시 \"100\"",
   "admin.team.maxChannelsTitle": "팀 당 최대 채널 :",
   "admin.team.maxNotificationsPerChannelExample": "예시: \"1000\"",

@@ -19,7 +19,7 @@ Cypress.Commands.add('uiInviteMemberToCurrentTeam', (username) => {
     // * Verify user invited to team
     cy.get('.invitation-modal-confirm--sent .InviteResultRow').
         should('contain.text', `@${username}`).
-        and('contain.text', 'This member has been added to the team.');
+        and('contain.text', 'This member has been added to the division.');
 
     // # Close, return
     cy.findByTestId('confirm-done').click();

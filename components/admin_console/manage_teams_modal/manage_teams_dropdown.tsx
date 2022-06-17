@@ -64,11 +64,11 @@ const ManageTeamsDropdown = (props: Props) => {
     if (isSysAdmin) {
         title = localizeMessage('admin.user_item.sysAdmin', 'System Admin');
     } else if (isTeamAdmin) {
-        title = localizeMessage('admin.user_item.teamAdmin', 'Team Admin');
+        title = localizeMessage('admin.user_item.teamAdmin', 'Division Admin');
     } else if (isGuestUser) {
         title = localizeMessage('admin.user_item.guest', 'Guest');
     } else {
-        title = localizeMessage('admin.user_item.teamMember', 'Team Member');
+        title = localizeMessage('admin.user_item.teamMember', 'Division Member');
     }
 
     return (
@@ -84,17 +84,17 @@ const ManageTeamsDropdown = (props: Props) => {
                 <Menu.ItemAction
                     show={!isTeamAdmin && !isGuestUser}
                     onClick={makeTeamAdmin}
-                    text={localizeMessage('admin.user_item.makeTeamAdmin', 'Make Team Admin')}
+                    text={localizeMessage('admin.user_item.makeTeamAdmin', 'Make Division Admin')}
                 />
                 <Menu.ItemAction
                     show={isTeamAdmin}
                     onClick={makeMember}
-                    text={localizeMessage('admin.user_item.makeMember', 'Make Team Member')}
+                    text={localizeMessage('admin.user_item.makeMember', 'Make Division Member')}
                 />
                 <Menu.ItemAction
                     show={!team.group_constrained}
                     onClick={removeFromTeam}
-                    text={localizeMessage('team_members_dropdown.leave_team', 'Remove from Team')}
+                    text={localizeMessage('team_members_dropdown.leave_team', 'Remove from Division')}
                 />
             </Menu>
         </MenuWrapper>

@@ -43,10 +43,10 @@ describe('Onboarding', () => {
     });
 
     it('MM-T400 Create account from login page link using email-password', () => {
-        // # Open team menu and click on "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click on "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
             cy.get('#open_inviteEdit').should('be.visible').click();
 

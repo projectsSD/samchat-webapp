@@ -11,7 +11,7 @@
 
 import * as TIMEOUTS from '../../../fixtures/timeouts';
 
-describe('System Console > Team Statistics', () => {
+describe('System Console > Division Statistics', () => {
     before(() => {
         // # Create team.
         cy.apiCreateTeam('mmt906-team', 'mmt906-team').then(({team}) => {
@@ -29,9 +29,9 @@ describe('System Console > Team Statistics', () => {
         });
     });
 
-    it('MM-T906 Team Statistics displays expected content categories', () => {
+    it('MM-T906 Division Statistics displays expected content categories', () => {
         // * Check that the header has loaded correctly and contains the expected text.
-        cy.get('.team-statistics__header span').should('be.visible').should('contain', 'Team Statistics for');
+        cy.get('.team-statistics__header span').should('be.visible').should('contain', 'Division Statistics for');
 
         // * Check that the rows for the table were generated.
         cy.get('.admin-console__content .row').should('have.length', 4);
@@ -56,7 +56,7 @@ describe('System Console > Team Statistics', () => {
         cy.get('.recent-active-users').find('table').eq(1).should('not.empty');
     });
 
-    it('MM-T907 - Reporting ➜ Team Statistics - teams listed in alphabetical order', () => {
+    it('MM-T907 - Reporting ➜ Division Statistics - teams listed in alphabetical order', () => {
         cy.visit('/admin_console');
         cy.get('#reporting\\/team_statistics').click();
         cy.wait(TIMEOUTS.ONE_SEC);

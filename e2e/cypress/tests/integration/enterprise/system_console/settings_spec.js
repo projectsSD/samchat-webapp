@@ -45,7 +45,7 @@ describe('Settings', () => {
         cy.get('.compliance-panel__table tbody tr').first().should('contain.text', 'sample report');
     });
 
-    it('MM-T1635 Channel listing is displayed correctly with proper team name', () => {
+    it('MM-T1635 Channel listing is displayed correctly with proper division name', () => {
         let teamName;
         cy.visit('/admin_console/user_management/channels');
 

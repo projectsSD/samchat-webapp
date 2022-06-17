@@ -198,7 +198,7 @@ describe('Team Permissions', () => {
         });
     });
 
-    it('MM-T2908 As a Team Admin, the test user is able to update the public channel Name, Header and Purpose', () => {
+    it('MM-T2908 As a Division Admin, the test user is able to update the public channel Name, Header and Purpose', () => {
         cy.apiLogin(testUser);
 
         // # Create new team

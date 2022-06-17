@@ -609,7 +609,7 @@ export default class PermissionTeamSchemeSettings extends React.PureComponent<Pr
                                 <span>
                                     <FormattedMessage
                                         id='admin.permissions.teamScheme.introBanner'
-                                        defaultMessage='<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Team Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>.'
+                                        defaultMessage='<linkTeamOverride>Team Override Schemes</linkTeamOverride> set the permissions for Division Admins, Channel Admins and other members in specific teams. Use a Team Override Scheme when specific teams need permission exceptions to the <linkSystemScheme>System Scheme</linkSystemScheme>.'
                                         values={{
                                             linkTeamOverride: (msg: React.ReactNode) => (
                                                 <a
@@ -805,9 +805,9 @@ export default class PermissionTeamSchemeSettings extends React.PureComponent<Pr
                             open={this.state.openRoles.team_admin}
                             onToggle={() => this.toggleRole('team_admin')}
                             titleId={t('admin.permissions.systemScheme.teamAdminsTitle')}
-                            titleDefault='Team Administrators'
+                            titleDefault='Division Administrators'
                             subtitleId={t('admin.permissions.systemScheme.teamAdminsDescription')}
-                            subtitleDefault='Permissions granted to team creators and any users promoted to Team Administrator.'
+                            subtitleDefault='Permissions granted to team creators and any users promoted to Division Administrator.'
                             isDisabled={this.props.isDisabled}
                         >
                             <PermissionsTree

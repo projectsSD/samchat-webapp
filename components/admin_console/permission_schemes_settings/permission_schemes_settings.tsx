@@ -222,7 +222,7 @@ export default class PermissionSchemesSettings extends React.PureComponent<Props
                                 <span>
                                     <FormattedMarkdownMessage
                                         id='admin.permissions.introBanner'
-                                        defaultMessage='Permission Schemes set the default permissions for Team Admins, Channel Admins and everyone else. Learn more about permission schemes in our [documentation](!https://docs.mattermost.com/onboard/advanced-permissions.html).'
+                                        defaultMessage='Permission Schemes set the default permissions for Division Admins, Channel Admins and everyone else. Learn more about permission schemes in our [documentation](!https://docs.mattermost.com/onboard/advanced-permissions.html).'
                                     />
                                 </span>
                             </div>

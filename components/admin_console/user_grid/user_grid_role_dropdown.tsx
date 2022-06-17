@@ -38,8 +38,8 @@ export default class UserGridRoleDropdown extends React.PureComponent<Props> {
     private getDropDownOptions = () => {
         if (this.props.scope === 'team') {
             return {
-                makeAdmin: Utils.localizeMessage('team_members_dropdown.makeAdmin', 'Make Team Admin'),
-                makeMember: Utils.localizeMessage('team_members_dropdown.makeMember', 'Make Team Member'),
+                makeAdmin: Utils.localizeMessage('team_members_dropdown.makeAdmin', 'Make Division Admin'),
+                makeMember: Utils.localizeMessage('team_members_dropdown.makeMember', 'Make Division Member'),
             };
         }
 
@@ -84,7 +84,7 @@ export default class UserGridRoleDropdown extends React.PureComponent<Props> {
         case 'system_admin':
             return Utils.localizeMessage('admin.user_grid.system_admin', 'System Admin');
         case 'team_admin':
-            return Utils.localizeMessage('admin.user_grid.team_admin', 'Team Admin');
+            return Utils.localizeMessage('admin.user_grid.team_admin', 'Division Admin');
         case 'channel_admin':
             return Utils.localizeMessage('admin.user_grid.channel_admin', 'Channel Admin');
         case 'shared_member':

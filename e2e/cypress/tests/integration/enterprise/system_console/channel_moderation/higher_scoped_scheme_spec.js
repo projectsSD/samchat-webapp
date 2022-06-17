@@ -294,7 +294,7 @@ describe('MM-23102 - Channel Moderation - Higher Scoped Scheme', () => {
         demoteToChannelOrTeamMember(regularUser.id, testChannel.id);
     });
 
-    it('MM-T1583 Channel Moderation Settings should not be applied for Team Admins', () => {
+    it('MM-T1583 Channel Moderation Settings should not be applied for Division Admins', () => {
         enableDisableAllChannelModeratedPermissionsViaAPI(testChannel, false);
         visitChannel(regularUser, testChannel, testTeam);
         promoteToChannelOrTeamAdmin(regularUser.id, testTeam.id, 'teams');

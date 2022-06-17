@@ -93,7 +93,7 @@ export default class TeamSettingsModal extends React.PureComponent<Props, State>
                     <Modal.Title componentClass='h1'>
                         <FormattedMessage
                             id='team_settings_modal.title'
-                            defaultMessage='Team Settings'
+                            defaultMessage='Division Settings'
                         />
                     </Modal.Title>
                 </Modal.Header>

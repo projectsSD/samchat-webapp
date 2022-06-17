@@ -63,7 +63,7 @@ const OpenInvite = (props: Props) => {
 
         return (
             <SettingItemMin
-                title={intl.formatMessage({id: 'general_tab.openInviteTitle', defaultMessage: 'Allow any user with an account on this server to join this team'})}
+                title={intl.formatMessage({id: 'general_tab.openInviteTitle', defaultMessage: 'Allow any user with an account on this server to join this division'})}
                 describe={describe}
                 updateSection={handleToggle}
                 section={'open_invite'}
@@ -128,7 +128,7 @@ const OpenInvite = (props: Props) => {
                 <div className='mt-5'>
                     <FormattedMessage
                         id='general_tab.openInviteDesc'
-                        defaultMessage='When allowed, a link to this team will be included on the landing page allowing anyone with an account to join this team. Changing from "Yes" to "No" will regenerate the  invitation code, create a new invitation link and invalidate the previous link.'
+                        defaultMessage='When allowed, a link to this division will be included on the landing page allowing anyone with an account to join this division. Changing from "Yes" to "No" will regenerate the  invitation code, create a new invitation link and invalidate the previous link.'
                     />
                 </div>
             </fieldset>,
@@ -137,7 +137,7 @@ const OpenInvite = (props: Props) => {
 
     return (
         <SettingItemMax
-            title={intl.formatMessage({id: 'general_tab.openInviteTitle', defaultMessage: 'Allow any user with an account on this server to join this team'})}
+            title={intl.formatMessage({id: 'general_tab.openInviteTitle', defaultMessage: 'Allow any user with an account on this server to join this division'})}
             inputs={inputs}
             submit={submit}
             serverError={serverError}

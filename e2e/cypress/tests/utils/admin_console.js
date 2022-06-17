@@ -34,8 +34,8 @@ export const adminConsoleNavigation = [
     },
     {
         type: ['team', 'e20', 'cloud_enterprise'],
-        header: 'Team Statistics',
-        sidebar: 'Team Statistics',
+        header: 'Division Statistics',
+        sidebar: 'Division Statistics',
         url: '/admin_console/reporting/team_statistics',
         headerContains: true,
     },
@@ -60,8 +60,8 @@ export const adminConsoleNavigation = [
     },
     {
         type: ['team', 'e20', 'cloud_enterprise'],
-        header: 'Mattermost Teams',
-        sidebar: 'Teams',
+        header: 'Mattermost Divisions',
+        sidebar: 'Divisions',
         url: 'admin_console/user_management/teams',
     },
     {
@@ -186,8 +186,8 @@ export const adminConsoleNavigation = [
     },
     {
         type: ['team', 'e20', 'cloud_enterprise'],
-        header: 'Users and Teams',
-        sidebar: 'Users and Teams',
+        header: 'Users and Divisions',
+        sidebar: 'Users and Divisions',
         url: 'admin_console/site_config/users_and_teams',
     },
     {

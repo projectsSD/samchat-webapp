@@ -13,7 +13,7 @@ exports[`components/team_members_dropdown should match snapshot for a bot with g
   >
     <span>
       <MemoizedFormattedMessage
-        defaultMessage="Team Admin"
+        defaultMessage="Division Admin"
         id="team_members_dropdown.teamAdmin"
       />
        
@@ -55,7 +55,7 @@ exports[`components/team_members_dropdown should match snapshot for team_members
   >
     <span>
       <MemoizedFormattedMessage
-        defaultMessage="Team Admin"
+        defaultMessage="Division Admin"
         id="team_members_dropdown.teamAdmin"
       />
        
@@ -97,7 +97,7 @@ exports[`components/team_members_dropdown should match snapshot opening dropdown
   >
     <span>
       <MemoizedFormattedMessage
-        defaultMessage="Team Admin"
+        defaultMessage="Division Admin"
         id="team_members_dropdown.teamAdmin"
       />
        
@@ -139,7 +139,7 @@ exports[`components/team_members_dropdown should match snapshot with group-const
   >
     <span>
       <MemoizedFormattedMessage
-        defaultMessage="Team Admin"
+        defaultMessage="Division Admin"
         id="team_members_dropdown.teamAdmin"
       />
        

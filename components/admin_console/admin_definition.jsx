@@ -427,7 +427,7 @@ const AdminDefinition = {
         team_statistics: {
             url: 'reporting/team_statistics',
             title: t('admin.sidebar.teamStatistics'),
-            title_default: 'Team Statistics',
+            title_default: 'Division Statistics',
             searchableStrings: [
                 ['analytics.team.title', {team: ''}],
                 'analytics.system.info',
@@ -557,7 +557,7 @@ const AdminDefinition = {
         teams: {
             url: 'user_management/teams',
             title: t('admin.sidebar.teams'),
-            title_default: 'Teams',
+            title_default: 'Divisions',
             isHidden: it.any(
                 it.not(it.userHasReadPermissionOnResource(RESOURCE_KEYS.USER_MANAGEMENT.TEAMS)),
             ),
@@ -1938,9 +1938,9 @@ const AdminDefinition = {
                         label: t('admin.team.brandDescriptionTitle'),
                         label_default: 'Site Description: ',
                         help_text: t('admin.team.brandDescriptionHelp'),
-                        help_text_default: 'Description of service shown in login screens and UI. When not specified, "All team communication in one place, searchable and accessible anywhere" is displayed.',
+                        help_text_default: 'Description of service shown in login screens and UI. When not specified, "All division communication in one place, searchable and accessible anywhere" is displayed.',
                         placeholder: t('web.root.signup_info'),
-                        placeholder_default: 'All team communication in one place, searchable and accessible anywhere',
+                        placeholder_default: 'All division communication in one place, searchable and accessible anywhere',
                         isDisabled: it.not(it.userHasWritePermissionOnResource(RESOURCE_KEYS.SITE.CUSTOMIZATION)),
                     },
                     {
@@ -2114,20 +2114,20 @@ const AdminDefinition = {
         users_and_teams: {
             url: 'site_config/users_and_teams',
             title: t('admin.sidebar.usersAndTeams'),
-            title_default: 'Users and Teams',
+            title_default: 'Users and Divisions',
             isHidden: it.not(it.userHasReadPermissionOnResource(RESOURCE_KEYS.SITE.USERS_AND_TEAMS)),
             schema: {
                 id: 'UserAndTeamsSettings',
                 name: t('admin.site.usersAndTeams'),
-                name_default: 'Users and Teams',
+                name_default: 'Users and Divisions',
                 settings: [
                     {
                         type: Constants.SettingsTypes.TYPE_NUMBER,
                         key: 'TeamSettings.MaxUsersPerTeam',
                         label: t('admin.team.maxUsersTitle'),
-                        label_default: 'Max Users Per Team:',
+                        label_default: 'Max Users Per Division:',
                         help_text: t('admin.team.maxUsersDescription'),
-                        help_text_default: 'Maximum total number of users per team, including both active and inactive users.',
+                        help_text_default: 'Maximum total number of users per division, including both active and inactive users.',
                         placeholder: t('admin.team.maxUsersExample'),
                         placeholder_default: 'E.g.: "25"',
                         isDisabled: it.not(it.userHasWritePermissionOnResource(RESOURCE_KEYS.SITE.USERS_AND_TEAMS)),
@@ -2136,9 +2136,9 @@ const AdminDefinition = {
                         type: Constants.SettingsTypes.TYPE_NUMBER,
                         key: 'TeamSettings.MaxChannelsPerTeam',
                         label: t('admin.team.maxChannelsTitle'),
-                        label_default: 'Max Channels Per Team:',
+                        label_default: 'Max Channels Per Division:',
                         help_text: t('admin.team.maxChannelsDescription'),
-                        help_text_default: 'Maximum total number of channels per team, including both active and archived channels.',
+                        help_text_default: 'Maximum total number of channels per division, including both active and archived channels.',
                         placeholder: t('admin.team.maxChannelsExample'),
                         placeholder_default: 'E.g.: "100"',
                         isDisabled: it.not(it.userHasWritePermissionOnResource(RESOURCE_KEYS.SITE.USERS_AND_TEAMS)),
@@ -2168,7 +2168,7 @@ const AdminDefinition = {
                         type: Constants.SettingsTypes.TYPE_DROPDOWN,
                         key: 'TeamSettings.TeammateNameDisplay',
                         label: t('admin.team.teammateNameDisplay'),
-                        label_default: 'Teammate Name Display:',
+                        label_default: 'Divisionmate Name Display:',
                         help_text: t('admin.team.teammateNameDisplayDesc'),
                         help_text_default: 'Set how to display users\' names in posts and the Direct Messages list.',
                         options: [
@@ -2194,9 +2194,9 @@ const AdminDefinition = {
                         type: Constants.SettingsTypes.TYPE_BOOL,
                         key: 'TeamSettings.LockTeammateNameDisplay',
                         label: t('admin.lockTeammateNameDisplay'),
-                        label_default: 'Lock Teammate Name Display for all users: ',
+                        label_default: 'Lock Divisionmate Name Display for all users: ',
                         help_text: t('admin.lockTeammateNameDisplayHelpText'),
-                        help_text_default: 'When true, disables users\' ability to change settings under Account Menu > Account Settings > Display > Teammate Name Display.',
+                        help_text_default: 'When true, disables users\' ability to change settings under Account Menu > Account Settings > Display > Divisionmate Name Display.',
                         isHidden: it.not(it.licensedForFeature('LockTeammateNameDisplay')),
                         isDisabled: it.not(it.userHasWritePermissionOnResource(RESOURCE_KEYS.SITE.USERS_AND_TEAMS)),
                     },

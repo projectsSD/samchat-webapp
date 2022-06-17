@@ -41,7 +41,7 @@ describe('Integrations', () => {
     it('MM-T575 /invite-people', () => {
         loginAndVisitChannel(testUser, testChannelUrl);
 
-        // # Post `/invite email1 email2` where emails are of users not added to the team yet
+        // # Post `/invite email1 email2` where emails are of users not added to the division yet
         cy.postMessage(`/invite_people ${usersToInvite.map((user) => user.email).join(' ')} `);
 
         // * User who added them sees system message "Email invite(s) sent"

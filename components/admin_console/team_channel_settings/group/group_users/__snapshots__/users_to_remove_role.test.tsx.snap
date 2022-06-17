@@ -461,7 +461,7 @@ exports[`components/admin_console/team_channel_settings/group/UsersToRemoveRole 
   <div
     className="UsersToRemoveRole"
   >
-    Team Admin
+    Division Admin
   </div>
 </UsersToRemoveRole>
 `;

@@ -96,55 +96,55 @@ const postTypeMessage = {
     [JOIN_TEAM]: {
         one: {
             id: t('combined_system_message.joined_team.one'),
-            defaultMessage: '{firstUser} **joined the team**.',
+            defaultMessage: '{firstUser} **joined the division**.',
         },
         one_you: {
             id: t('combined_system_message.joined_team.one_you'),
-            defaultMessage: 'You **joined the team**.',
+            defaultMessage: 'You **joined the division**.',
         },
         two: {
             id: t('combined_system_message.joined_team.two'),
-            defaultMessage: '{firstUser} and {secondUser} **joined the team**.',
+            defaultMessage: '{firstUser} and {secondUser} **joined the division**.',
         },
         many_expanded: {
             id: t('combined_system_message.joined_team.many_expanded'),
-            defaultMessage: '{users} and {lastUser} **joined the team**.',
+            defaultMessage: '{users} and {lastUser} **joined the division**.',
         },
     },
     [ADD_TO_TEAM]: {
         one: {
             id: t('combined_system_message.added_to_team.one'),
-            defaultMessage: '{firstUser} **added to the team** by {actor}.',
+            defaultMessage: '{firstUser} **added to the division** by {actor}.',
         },
         one_you: {
             id: t('combined_system_message.added_to_team.one_you'),
-            defaultMessage: 'You were **added to the team** by {actor}.',
+            defaultMessage: 'You were **added to the division** by {actor}.',
         },
         two: {
             id: t('combined_system_message.added_to_team.two'),
-            defaultMessage: '{firstUser} and {secondUser} **added to the team** by {actor}.',
+            defaultMessage: '{firstUser} and {secondUser} **added to the division** by {actor}.',
         },
         many_expanded: {
             id: t('combined_system_message.added_to_team.many_expanded'),
-            defaultMessage: '{users} and {lastUser} were **added to the team** by {actor}.',
+            defaultMessage: '{users} and {lastUser} were **added to the division** by {actor}.',
         },
     },
     [REMOVE_FROM_TEAM]: {
         one: {
             id: t('combined_system_message.removed_from_team.one'),
-            defaultMessage: '{firstUser} was **removed from the team**.',
+            defaultMessage: '{firstUser} was **removed from the division**.',
         },
         one_you: {
             id: t('combined_system_message.removed_from_team.one_you'),
-            defaultMessage: 'You were **removed from the team**.',
+            defaultMessage: 'You were **removed from the division**.',
         },
         two: {
             id: t('combined_system_message.removed_from_team.two'),
-            defaultMessage: '{firstUser} and {secondUser} were **removed from the team**.',
+            defaultMessage: '{firstUser} and {secondUser} were **removed from the division**.',
         },
         many_expanded: {
             id: t('combined_system_message.removed_from_team.many_expanded'),
-            defaultMessage: '{users} and {lastUser} were **removed from the team**.',
+            defaultMessage: '{users} and {lastUser} were **removed from the division**.',
         },
     },
     [LEAVE_TEAM]: {

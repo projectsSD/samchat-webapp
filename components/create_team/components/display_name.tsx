@@ -111,7 +111,7 @@ export default class TeamSignupDisplayNamePage extends React.PureComponent<Props
                         <FormattedMessage
                             id='create_team.display_name.teamName'
                             tagName='strong'
-                            defaultMessage='Team Name'
+                            defaultMessage='Division Name'
                         />
                     </h5>
                     <div className={nameDivClass}>
@@ -136,7 +136,7 @@ export default class TeamSignupDisplayNamePage extends React.PureComponent<Props
                     <div>
                         <FormattedMessage
                             id='create_team.display_name.nameHelp'
-                            defaultMessage='Name your team in any language. Your team name shows in menus and headings.'
+                            defaultMessage='Name your division in any language. Your division name shows in menus and headings.'
                         />
                     </div>
                     <button

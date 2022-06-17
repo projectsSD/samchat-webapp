@@ -41,7 +41,7 @@ describe('Teams Suite', () => {
         cy.url().should('include', `/${testTeam.name}/channels/town-square`);
 
         // # Open team menu and click "Manage Members"
-        cy.uiOpenTeamMenu('Leave Team');
+        cy.uiOpenTeamMenu('Leave Division');
 
         // * Check that the "leave team modal" opened up
         cy.get('#leaveTeamModal').should('be.visible');
@@ -75,7 +75,7 @@ describe('Teams Suite', () => {
 
             // # Open team menu and click "Invite People"
             cy.uiOpenTeamMenu();
-            cy.uiGetLHSTeamMenu().findByText('Add people to the team');
+            cy.uiGetLHSTeamMenu().findByText('Add people to the division');
             cy.uiGetLHSTeamMenu().findByText('Invite People').click();
 
             // * Check that the Invitation Modal opened up
@@ -103,8 +103,8 @@ describe('Teams Suite', () => {
                     and('have.text', 'System');
                 cy.wrap($el).get('.post-message__text-container').
                     should('be.visible').
-                    and('contain', `You and @${testUser.username} joined the team.`).
-                    and('contain', `@${otherUser.username} added to the team by you.`);
+                    and('contain', `You and @${testUser.username} joined the division.`).
+                    and('contain', `@${otherUser.username} added to the division by you.`);
             });
 
             cy.get('#sidebarItem_off-topic').should('be.visible').click({force: true});
@@ -134,8 +134,8 @@ describe('Teams Suite', () => {
                     and('have.text', 'System');
                 cy.wrap($el).get('.post-message__text-container').
                     should('be.visible').
-                    and('contain', `@${sysadmin.username} joined the team.`).
-                    and('contain', `You were added to the team by @${sysadmin.username}.`);
+                    and('contain', `@${sysadmin.username} joined the division.`).
+                    and('contain', `You were added to the division by @${sysadmin.username}.`);
             });
 
             cy.get('#sidebarItem_off-topic').should('be.visible').click({force: true});
@@ -183,14 +183,14 @@ describe('Teams Suite', () => {
         // # visit /
         cy.visit(`/${testTeam.name}/channels/town-square`);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
         // # Open edit settings for invite code
         cy.findByText('Invite Code').should('be.visible').click();
 
         // * Verify invite code help text is visible
-        cy.findByText('The Invite Code is part of the unique team invitation link which is sent to members you’re inviting to this team. Regenerating the code creates a new invitation link and invalidates the previous link.').
+        cy.findByText('The Invite Code is part of the unique division invitation link which is sent to members you’re inviting to this division. Regenerating the code creates a new invitation link and invalidates the previous link.').
             scrollIntoView().
             should('be.visible');
 
@@ -204,11 +204,11 @@ describe('Teams Suite', () => {
         // # Visit town-square channel
         cy.visit(`/${testTeam.name}/channels/town-square`);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
         // # Click on the team name menu item
-        cy.findByText('Team Name').should('be.visible').click();
+        cy.findByText('Division Name').should('be.visible').click();
 
         // # Change team name in the input
         cy.get('#teamName').should('be.visible').clear().type(teamName);
@@ -235,11 +235,11 @@ describe('Teams Suite', () => {
         // # Visit town-square channel
         cy.visit(`/${testTeam.name}/channels/town-square`);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
         // # Click on the team description menu item
-        cy.findByText('Team Description').should('be.visible').click();
+        cy.findByText('Division Description').should('be.visible').click();
 
         // # Change team description in the input
         cy.get('#teamDescription').should('be.visible').clear().type(teamDescription);
@@ -248,8 +248,8 @@ describe('Teams Suite', () => {
         // Save and close
         cy.uiSaveAndClose();
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
         // * Verify team description is updated
         cy.get('#descriptionDesc').should('have.text', teamDescription);
@@ -259,11 +259,11 @@ describe('Teams Suite', () => {
         // # Visit town-square channel
         cy.visit(`/${testTeam.name}/channels/town-square`);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
         // # Click on the team description menu item
-        cy.findByText('Allow any user with an account on this server to join this team').should('be.visible').click();
+        cy.findByText('Allow any user with an account on this server to join this division').should('be.visible').click();
 
         // # Change team description in the input
         cy.get('#teamOpenInvite').click();
@@ -299,11 +299,11 @@ describe('Teams Suite', () => {
         // # Visit town-square channel
         cy.visit(`/${testTeam.name}/channels/town-square`);
 
-        // # Open team menu and click "Team Settings"
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click "Division Settings"
+        cy.uiOpenTeamMenu('Division Settings');
 
         // # Click on the team description menu item
-        cy.findByText('Allow any user with an account on this server to join this team').should('be.visible').click();
+        cy.findByText('Allow any user with an account on this server to join this division').should('be.visible').click();
 
         // # Change team description in the input
         cy.get('#teamOpenInviteNo').click();

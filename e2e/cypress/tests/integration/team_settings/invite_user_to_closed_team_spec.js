@@ -13,7 +13,7 @@
 import {getRandomId} from '../../utils';
 import * as TIMEOUTS from '../../fixtures/timeouts';
 
-describe('Team Settings', () => {
+describe('Division Settings', () => {
     let newUser;
 
     before(() => {
@@ -26,19 +26,19 @@ describe('Team Settings', () => {
         });
     });
 
-    it('MM-T388 - Invite new user to closed team with "Allow only users with a specific email domain to join this team" set to "sample.mattermost.com" AND include a non-sample.mattermost.com email address in the invites', () => {
+    it('MM-T388 - Invite new user to closed team with "Allow only users with a specific email domain to join this division" set to "sample.mattermost.com" AND include a non-sample.mattermost.com email address in the invites', () => {
         const emailDomain = 'sample.mattermost.com';
         const invalidEmail = `user.${getRandomId()}@invalid.com`;
         const userDetailsString = `@${newUser.username} - ${newUser.first_name} ${newUser.last_name} (${newUser.nickname})`;
-        const inviteSuccessMessage = 'This member has been added to the team.';
+        const inviteSuccessMessage = 'This member has been added to the division.';
         const inviteFailedMessage = `The following email addresses do not belong to an accepted domain: ${invalidEmail}. Please contact your System Administrator for details.`;
 
-        // # Open team menu and click 'Team Settings'
-        cy.uiOpenTeamMenu('Team Settings');
+        // # Open team menu and click 'Division Settings'
+        cy.uiOpenTeamMenu('Division Settings');
 
-        // * Check that the 'Team Settings' modal was opened
+        // * Check that the 'Division Settings' modal was opened
         cy.get('#teamSettingsModal').should('exist').within(() => {
-            // # Click on the 'Allow only users with a specific email domain to join this team' edit button
+            // # Click on the 'Allow only users with a specific email domain to join this division' edit button
             cy.get('#allowed_domainsEdit').should('be.visible').click();
 
             // # Set 'sample.mattermost.com' as the only allowed email domain and save

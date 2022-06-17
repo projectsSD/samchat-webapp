@@ -126,7 +126,7 @@ exports[`components/admin_console/system_user_detail should match default snapsh
         className=""
         subtitleDefault="Teams to which this user belongs"
         subtitleId="admin.userManagement.userDetail.teamsSubtitle"
-        titleDefault="Team Membership"
+        titleDefault="Division Membership"
         titleId="admin.userManagement.userDetail.teamsTitle"
       >
         <Connect(TeamList)
@@ -363,7 +363,7 @@ exports[`components/admin_console/system_user_detail should match snapshot if LD
         className=""
         subtitleDefault="Teams to which this user belongs"
         subtitleId="admin.userManagement.userDetail.teamsSubtitle"
-        titleDefault="Team Membership"
+        titleDefault="Division Membership"
         titleId="admin.userManagement.userDetail.teamsTitle"
       >
         <Connect(TeamList)
@@ -607,7 +607,7 @@ exports[`components/admin_console/system_user_detail should match snapshot if MF
         className=""
         subtitleDefault="Teams to which this user belongs"
         subtitleId="admin.userManagement.userDetail.teamsSubtitle"
-        titleDefault="Team Membership"
+        titleDefault="Division Membership"
         titleId="admin.userManagement.userDetail.teamsTitle"
       >
         <Connect(TeamList)
@@ -845,7 +845,7 @@ exports[`components/admin_console/system_user_detail should match snapshot if SA
         className=""
         subtitleDefault="Teams to which this user belongs"
         subtitleId="admin.userManagement.userDetail.teamsSubtitle"
-        titleDefault="Team Membership"
+        titleDefault="Division Membership"
         titleId="admin.userManagement.userDetail.teamsTitle"
       >
         <Connect(TeamList)
@@ -1082,7 +1082,7 @@ exports[`components/admin_console/system_user_detail should match snapshot if no
         className=""
         subtitleDefault="Teams to which this user belongs"
         subtitleId="admin.userManagement.userDetail.teamsSubtitle"
-        titleDefault="Team Membership"
+        titleDefault="Division Membership"
         titleId="admin.userManagement.userDetail.teamsTitle"
       >
         <Connect(TeamList)
@@ -1319,7 +1319,7 @@ exports[`components/admin_console/system_user_detail should match snapshot if us
         className=""
         subtitleDefault="Teams to which this user belongs"
         subtitleId="admin.userManagement.userDetail.teamsSubtitle"
-        titleDefault="Team Membership"
+        titleDefault="Division Membership"
         titleId="admin.userManagement.userDetail.teamsTitle"
       >
         <Connect(TeamList)

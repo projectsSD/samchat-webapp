@@ -426,7 +426,7 @@ export default class SystemUserDetail extends React.PureComponent<Props & RouteC
                             subtitleId={t('admin.userManagement.userDetail.teamsSubtitle')}
                             subtitleDefault={'Teams to which this user belongs'}
                             titleId={t('admin.userManagement.userDetail.teamsTitle')}
-                            titleDefault={'Team Membership'}
+                            titleDefault={'Division Membership'}
                             button={(
                                 <div className='add-team-button'>
                                     <button

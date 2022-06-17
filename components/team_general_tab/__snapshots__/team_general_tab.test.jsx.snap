@@ -53,7 +53,7 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
     />
     <Connect(SettingItemMin)
       section="name"
-      title="Team Name"
+      title="Division Name"
       updateSection={[Function]}
     />
     <div
@@ -62,12 +62,12 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
     <Connect(SettingItemMin)
       describe={
         <Memo(MemoizedFormattedMessage)
-          defaultMessage="Click 'Edit' to add a team description."
+          defaultMessage="Click 'Edit' to add a division description."
           id="general_tab.emptyDescription"
         />
       }
       section="description"
-      title="Team Description"
+      title="Division Description"
       updateSection={[Function]}
     />
     <div
@@ -78,7 +78,7 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
       file={null}
       helpText={
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Upload a team icon in BMP, JPG or PNG format.\\\\nSquare images with a solid background color are recommended."
+          defaultMessage="Upload a division icon in BMP, JPG or PNG format.\\\\nSquare images with a solid background color are recommended."
           id="setting_picture.help.team"
         />
       }
@@ -90,7 +90,7 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
       serverError=""
       src={null}
       submitActive={false}
-      title="Team Icon"
+      title="Division Icon"
       updateSection={[Function]}
     />
     <div
@@ -185,7 +185,7 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
     />
     <Connect(SettingItemMin)
       section="name"
-      title="Team Name"
+      title="Division Name"
       updateSection={[Function]}
     />
     <div
@@ -194,12 +194,12 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
     <Connect(SettingItemMin)
       describe={
         <Memo(MemoizedFormattedMessage)
-          defaultMessage="Click 'Edit' to add a team description."
+          defaultMessage="Click 'Edit' to add a division description."
           id="general_tab.emptyDescription"
         />
       }
       section="description"
-      title="Team Description"
+      title="Division Description"
       updateSection={[Function]}
     />
     <div
@@ -210,7 +210,7 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
       file={null}
       helpText={
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Upload a team icon in BMP, JPG or PNG format.\\\\nSquare images with a solid background color are recommended."
+          defaultMessage="Upload a division icon in BMP, JPG or PNG format.\\\\nSquare images with a solid background color are recommended."
           id="setting_picture.help.team"
         />
       }
@@ -222,7 +222,7 @@ exports[`components/TeamSettings hide invite code if no permissions for team inv
       serverError=""
       src={null}
       submitActive={false}
-      title="Team Icon"
+      title="Division Icon"
       updateSection={[Function]}
     />
     <div
@@ -312,7 +312,7 @@ exports[`components/TeamSettings should match snapshot when team is group constr
     <Connect(SettingItemMin)
       describe="TestTeam"
       section="name"
-      title="Team Name"
+      title="Division Name"
       updateSection={[Function]}
     />
     <div
@@ -321,7 +321,7 @@ exports[`components/TeamSettings should match snapshot when team is group constr
     <Connect(SettingItemMin)
       describe="The Test Team"
       section="description"
-      title="Team Description"
+      title="Division Description"
       updateSection={[Function]}
     />
     <div
@@ -332,7 +332,7 @@ exports[`components/TeamSettings should match snapshot when team is group constr
       file={null}
       helpText={
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Upload a team icon in BMP, JPG or PNG format.\\\\nSquare images with a solid background color are recommended."
+          defaultMessage="Upload a division icon in BMP, JPG or PNG format.\\\\nSquare images with a solid background color are recommended."
           id="setting_picture.help.team"
         />
       }
@@ -344,7 +344,7 @@ exports[`components/TeamSettings should match snapshot when team is group constr
       serverError=""
       src={null}
       submitActive={false}
-      title="Team Icon"
+      title="Division Icon"
       updateSection={[Function]}
     />
     <div

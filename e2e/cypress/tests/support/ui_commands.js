@@ -424,8 +424,8 @@ Cypress.Commands.add('getCurrentTeamURL', (siteURL) => {
 });
 
 Cypress.Commands.add('leaveTeam', () => {
-    // # Open team menu and click "Leave Team"
-    cy.uiOpenTeamMenu('Leave Team');
+    // # Open team menu and click "Leave Division"
+    cy.uiOpenTeamMenu('Leave Division');
 
     // * Check that the "leave team modal" opened up
     cy.get('#leaveTeamModal').should('be.visible');
@@ -458,7 +458,7 @@ Cypress.Commands.add('minDisplaySettings', () => {
     cy.get('#clockTitle').should('be.visible', 'contain', 'Clock Display');
     cy.get('#clockEdit').should('be.visible', 'contain', 'Edit');
 
-    cy.get('#name_formatTitle').should('be.visible', 'contain', 'Teammate Name Display');
+    cy.get('#name_formatTitle').should('be.visible', 'contain', 'Divisionmate Name Display');
     cy.get('#name_formatEdit').should('be.visible', 'contain', 'Edit');
 
     cy.get('#collapseTitle').should('be.visible', 'contain', 'Default appearance of image previews');

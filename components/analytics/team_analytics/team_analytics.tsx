@@ -164,7 +164,7 @@ export default class TeamAnalytics extends React.PureComponent<Props, State> {
                 <div className='banner__content'>
                     <FormattedMessage
                         id='analytics.system.info'
-                        defaultMessage='Use data for only the chosen team. Exclude posts in direct message channels that are not tied to a team.'
+                        defaultMessage='Use data for only the chosen division. Exclude posts in direct message channels that are not tied to a division.'
                     />
                 </div>
             </div>
@@ -179,7 +179,7 @@ export default class TeamAnalytics extends React.PureComponent<Props, State> {
                     <div className='banner__content'>
                         <FormattedMarkdownMessage
                             id='analytics.system.infoAndSkippedIntensiveQueries'
-                            defaultMessage='Use data for only the chosen team. Exclude posts in direct message channels that are not tied to a team. \n \n To maximize performance, some statistics are disabled. You can [re-enable them in config.json](!https://docs.mattermost.com/administration/statistics.html).'
+                            defaultMessage='Use data for only the chosen division. Exclude posts in direct message channels that are not tied to a division. \n \n To maximize performance, some statistics are disabled. You can [re-enable them in config.json](!https://docs.mattermost.com/administration/statistics.html).'
                         />
                     </div>
                 </div>
@@ -265,7 +265,7 @@ export default class TeamAnalytics extends React.PureComponent<Props, State> {
                     <div className='team-statistics__header'>
                         <FormattedMarkdownMessage
                             id='analytics.team.title'
-                            defaultMessage='Team Statistics for {team}'
+                            defaultMessage='Division Statistics for {team}'
                             values={{
                                 team: this.state.team.display_name,
                             }}

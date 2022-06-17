@@ -18,7 +18,7 @@ export function TeamsSettings(props: Props) {
             <div className='admin-console__header'>
                 <FormattedMessage
                     id='admin.team_settings.groupsPageTitle'
-                    defaultMessage='{siteName} Teams'
+                    defaultMessage='{siteName} Divisions'
                     values={{siteName: props.siteName}}
                 />
             </div>
@@ -30,7 +30,7 @@ export function TeamsSettings(props: Props) {
                         titleId={t('admin.team_settings.title')}
                         titleDefault='Teams'
                         subtitleId={t('admin.team_settings.description')}
-                        subtitleDefault='Manage team settings.'
+                        subtitleDefault='Manage division settings.'
                     >
                         <TeamList/>
                     </AdminPanel>

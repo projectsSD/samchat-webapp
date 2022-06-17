@@ -171,7 +171,7 @@ export class MainMenu extends React.PureComponent<Props> {
                     })}
                     extraText={formatMessage({
                         id: 'navbar_dropdown.invitePeopleExtraText',
-                        defaultMessage: 'Add people to the team',
+                        defaultMessage: 'Add people to the division',
                     })}
                     icon={this.props.mobile && <i className='fa fa-user-plus'/>}
                 />
@@ -255,7 +255,7 @@ export class MainMenu extends React.PureComponent<Props> {
                             id='teamSettings'
                             modalId={ModalIdentifiers.TEAM_SETTINGS}
                             dialogType={TeamSettingsModal}
-                            text={formatMessage({id: 'navbar_dropdown.teamSettings', defaultMessage: 'Team Settings'})}
+                            text={formatMessage({id: 'navbar_dropdown.teamSettings', defaultMessage: 'Division Settings'})}
                             icon={<i className='fa fa-globe'/>}
                         />
                     </TeamPermissionGate>
@@ -307,7 +307,7 @@ export class MainMenu extends React.PureComponent<Props> {
                             id='createTeam'
                             show={!teamsLimitReached}
                             to='/create_team'
-                            text={formatMessage({id: 'navbar_dropdown.create', defaultMessage: 'Create a Team'})}
+                            text={formatMessage({id: 'navbar_dropdown.create', defaultMessage: 'Create a Division'})}
                             icon={<i className='fa fa-plus-square'/>}
                         />
                     </SystemPermissionGate>
@@ -323,7 +323,7 @@ export class MainMenu extends React.PureComponent<Props> {
                         show={!teamIsGroupConstrained && this.props.experimentalPrimaryTeam !== this.props.teamName}
                         modalId={ModalIdentifiers.LEAVE_TEAM}
                         dialogType={LeaveTeamModal}
-                        text={formatMessage({id: 'navbar_dropdown.leave', defaultMessage: 'Leave Team'})}
+                        text={formatMessage({id: 'navbar_dropdown.leave', defaultMessage: 'Leave Division'})}
                         icon={<LeaveTeamIcon/>}
                     />
                 </Menu.Group>
@@ -409,7 +409,7 @@ export class MainMenu extends React.PureComponent<Props> {
                             id='teamSettings'
                             modalId={ModalIdentifiers.TEAM_SETTINGS}
                             dialogType={TeamSettingsModal}
-                            text={formatMessage({id: 'navbar_dropdown.teamSettings', defaultMessage: 'Team Settings'})}
+                            text={formatMessage({id: 'navbar_dropdown.teamSettings', defaultMessage: 'Division Settings'})}
                         />
                     </TeamPermissionGate>
                     <TeamPermissionGate
@@ -460,7 +460,7 @@ export class MainMenu extends React.PureComponent<Props> {
                         show={!teamIsGroupConstrained && this.props.experimentalPrimaryTeam !== this.props.teamName}
                         modalId={ModalIdentifiers.LEAVE_TEAM}
                         dialogType={LeaveTeamModal}
-                        text={formatMessage({id: 'navbar_dropdown.leave', defaultMessage: 'Leave Team'})}
+                        text={formatMessage({id: 'navbar_dropdown.leave', defaultMessage: 'Leave Division'})}
                     />
                 </Menu.Group>
                 <Menu.Group>
@@ -470,7 +470,7 @@ export class MainMenu extends React.PureComponent<Props> {
                             to='/create_team'
                             className={createTeamRestricted ? 'MenuItem__with-icon-tooltip' : ''}
                             disabled={teamsLimitReached}
-                            text={formatMessage({id: 'navbar_dropdown.create', defaultMessage: 'Create a Team'})}
+                            text={formatMessage({id: 'navbar_dropdown.create', defaultMessage: 'Create a Division'})}
                             sibling={createTeamRestricted && (
                                 <RestrictedIndicator
                                     blocked={!this.props.isFreeTrial}

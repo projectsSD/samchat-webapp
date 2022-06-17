@@ -82,11 +82,11 @@ describe('Teams Settings', () => {
 });
 
 function openTeamSettingsDialog() {
-    // # Open team menu and click 'Team Settings'
-    cy.uiOpenTeamMenu('Team Settings');
+    // # Open team menu and click 'Division Settings'
+    cy.uiOpenTeamMenu('Division Settings');
 
     // * Verify the team settings dialog is open
-    cy.get('#teamSettingsModalLabel').should('be.visible').and('contain', 'Team Settings');
+    cy.get('#teamSettingsModalLabel').should('be.visible').and('contain', 'Division Settings');
 
     // * Verify the edit icon is visible
     cy.get('#team_iconEdit').should('be.visible');

@@ -154,7 +154,7 @@ describe('Guest Account - Member Invitation Flow', () => {
         });
     });
 
-    it('MM-T1326 Verify Invite Members - Existing Team Member', () => {
+    it('MM-T1326 Verify Invite Members - Existing Division Member', () => {
         cy.apiCreateTeam('team', 'Team').then(({team}) => {
             // # Login as new user
             loginAsNewUser(team);
@@ -176,7 +176,7 @@ describe('Guest Account - Member Invitation Flow', () => {
             invitePeople(testUser.email, 1, testUser.username);
 
             // * Verify the content and message in next screen
-            verifyInvitationSuccess(testUser.username, team, 'This member has been added to the team.');
+            verifyInvitationSuccess(testUser.username, team, 'This member has been added to the division.');
         });
     });
 
@@ -242,7 +242,7 @@ describe('Guest Account - Member Invitation Flow', () => {
                     cy.get('.people-header').should('have.text', 'People');
                     cy.get('.details-header').should('have.text', 'Details');
                     cy.get('.username-or-icon').should('contain', testUser.username);
-                    cy.get('.reason').should('have.text', 'This member has been added to the team.');
+                    cy.get('.reason').should('have.text', 'This member has been added to the division.');
                 });
             });
         });

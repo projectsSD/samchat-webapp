@@ -178,7 +178,7 @@ describe('actions/invite_actions', () => {
                 data: {
                     sent: [
                         {
-                            reason: 'This member has been added to the team.',
+                            reason: 'This member has been added to the division.',
                             user: {
                                 id: 'other-user',
                                 roles: 'system_user',
@@ -222,7 +222,7 @@ describe('actions/invite_actions', () => {
             const response = await sendMembersInvites('error', users, [])(store.dispatch as DispatchFunc, store.getState as GetStateFunc);
             expect(response).toEqual({
                 data: {
-                    sent: [{user: {id: 'other-user', roles: 'system_user'}, reason: 'This member has been added to the team.'}],
+                    sent: [{user: {id: 'other-user', roles: 'system_user'}, reason: 'This member has been added to the division.'}],
                     notSent: [
                         {
                             reason: 'This person is already a team member.',
@@ -346,7 +346,7 @@ describe('actions/invite_actions', () => {
                         {
                             reason: {
                                 id: 'invite.guests.new-member',
-                                message: 'This guest has been added to the team and {count, plural, one {channel} other {channels}}.',
+                                message: 'This guest has been added to the division and {count, plural, one {channel} other {channels}}.',
                                 values: {count: channels.length},
                             },
                             user: {
@@ -357,7 +357,7 @@ describe('actions/invite_actions', () => {
                         {
                             reason: {
                                 id: 'invite.guests.new-member',
-                                message: 'This guest has been added to the team and {count, plural, one {channel} other {channels}}.',
+                                message: 'This guest has been added to the division and {count, plural, one {channel} other {channels}}.',
                                 values: {count: channels.length},
                             },
                             user: {
@@ -434,7 +434,7 @@ describe('actions/invite_actions', () => {
                             },
                             reason: {
                                 id: 'invite.guests.new-member',
-                                message: 'This guest has been added to the team and {count, plural, one {channel} other {channels}}.',
+                                message: 'This guest has been added to the division and {count, plural, one {channel} other {channels}}.',
                                 values: {
                                     count: 1,
                                 },
@@ -447,7 +447,7 @@ describe('actions/invite_actions', () => {
                             },
                             reason: {
                                 id: 'invite.guests.new-member',
-                                message: 'This guest has been added to the team and {count, plural, one {channel} other {channels}}.',
+                                message: 'This guest has been added to the division and {count, plural, one {channel} other {channels}}.',
                                 values: {
                                     count: 1,
                                 },

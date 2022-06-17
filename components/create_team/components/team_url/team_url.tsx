@@ -200,7 +200,7 @@ export default class TeamUrl extends React.PureComponent<Props, State> {
             finishMessage = (
                 <FormattedMessage
                     id='create_team.team_url.creatingTeam'
-                    defaultMessage='Creating team...'
+                    defaultMessage='Creating division...'
                 />
             );
         }
@@ -217,7 +217,7 @@ export default class TeamUrl extends React.PureComponent<Props, State> {
                         <FormattedMessage
                             id='create_team.team_url.teamUrl'
                             tagName='strong'
-                            defaultMessage='Team URL'
+                            defaultMessage='Division URL'
                         />
                     </h5>
                     <div className={nameDivClass}>
@@ -253,7 +253,7 @@ export default class TeamUrl extends React.PureComponent<Props, State> {
                     <p>
                         <FormattedMessage
                             id='create_team.team_url.webAddress'
-                            defaultMessage='Choose the web address of your new team:'
+                            defaultMessage='Choose the web address of your new division:'
                         />
                     </p>
                     <ul className='color--light'>

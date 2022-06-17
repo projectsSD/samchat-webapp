@@ -28,7 +28,7 @@ describe('Team Scheme', () => {
         cy.visit('/admin_console/user_management/permissions');
     });
 
-    it('MM-T2855 Create a Team Override Scheme', () => {
+    it('MM-T2855 Create a Division Override Scheme', () => {
         // # Click `New Team Override Scheme`
         cy.findByTestId('team-override-schemes-link').should('be.visible').click().wait(TIMEOUTS.HALF_SEC);
 

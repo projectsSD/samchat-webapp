@@ -41,7 +41,7 @@ describe('Managing bots in Teams and Channels', () => {
             cy.uiInviteMemberToCurrentTeam(bot.username);
 
             // * Verify system message in-channel
-            cy.uiWaitUntilMessagePostedIncludes(`@${bot.username} added to the team by you.`);
+            cy.uiWaitUntilMessagePostedIncludes(`@${bot.username} added to the division by you.`);
         });
     });
 

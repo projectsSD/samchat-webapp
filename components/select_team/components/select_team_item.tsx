@@ -68,7 +68,7 @@ export default class SelectTeamItem extends React.PureComponent<Props> {
                 <LocalizedIcon
                     className='fa fa-angle-right right signup-team__icon'
                     component='span'
-                    title={{id: t('select_team.join.icon'), defaultMessage: 'Join Team Icon'}}
+                    title={{id: t('select_team.join.icon'), defaultMessage: 'Join Division Icon'}}
                 />
             );
         }
